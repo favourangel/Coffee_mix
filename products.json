@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "name": "Dirty Matcha",
+        "price": "$41.00",
+        "image": "./img2/freepik__matcha-latte__2976-removebg-preview.png"
+    },
+    {
+        "id": 2,
+        "name": "Ube-Latte",
+        "price": "$40.00",
+        "image": "./img2/freepik_assistant_ube-latte-removebg-preview.png"
+    },
+    {
+        "id": 3,
+        "name": "Dirty Horchata",
+        "price": "$50.00",
+        "image": "./img2/freepik__horchata-with-mud-splashes-cracked-glass-abandoned__2977-removebg-preview.png"
+    },
+    {
+        "id": 4,
+        "name": "Affogato",
+        "price": "$35.25",
+        "image": "./img2/close-up-delicious-coffee-with-cream-sugar-removebg-preview.png"
+    },
+    {
+        "id": 5,
+        "name": "Cold Brew Tonic",
+        "price": "$42.50",
+        "image": "./img2/delicious-cocktail-table-removebg-preview.png" 
+    },
+    {
+        "id": 6,
+        "name": "Iced Brown",
+        "price": "$51.25",
+        "image": "./img2/decadent-caramel-drizzled-sundae-illustration-removebg-preview.png"
+    }
+]

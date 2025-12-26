@@ -1,0 +1,1351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Coffee Mix</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/c26cd2166c.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/bs-brain@2.0.4/utilities/bsb-btn-circle/bsb-btn-circle.css">
+    <link rel="stylesheet" href="https://unpkg.com/bs-brain@2.0.4/utilities/margin/margin.css">
+    <link rel="stylesheet" href="https://unpkg.com/bs-brain@2.0.4/utilities/padding/padding.css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Pacifico&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,700&family=Lobster&family=Pacifico&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,700&family=Lobster&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Pacifico&display=swap');
+    </style>
+</head>
+<body style="background-color: #FDF8F3;">
+
+    <!--Navbar-->
+    <nav class="navbar bg-light fixed-top border-bottom small blur-fliter">
+        <div class="container-fluid">
+            <a class="navbar-brand brand-gradient" href="#">Coffee Mix</a>
+            <button    
+                class="navbar-toggler" 
+                type="button" data-bs-toggle="offcanvas" 
+                data-bs-target="#offcanvasNavbar" 
+                aria-controls="offcanvasNavbar" 
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title brand-gradient" id="offcanvasNavbarLabel">Coffee Mix</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" href="main.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="store.html">Store</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link cart-icon" href="#">
+                                <i class="fa-solid fa-bag-shopping"></i>
+                                <span class="cart-value">0</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!--Navbar-->
+
+    
+    <!--Menu Banner-->
+    <header class="menu-banner-wrapper mt-10"><!--mt-10 to give space for navbar-->
+        <div class="menu-banner-box d-flex justify-content-center align-items-center text-center px-4 py-5 border rounded shadow-sm">
+            <div class="col-12 col-md-8 col-lg-6"> 
+                <h4 style="font-family: 'Cormorant Garamond',serif; font-optical-sizing: auto; font-weight: 700; font-style: italic; font-size: clamp(28px, 6vw, 48px); color: #708238;">Our Product</h4>
+                <p style="font-family:'Pacifico',cursive; font-weight: 400; font-style: normal; font-size: clamp(38x, 8vw, 72px); color: #581845">Welcome valued customer, Hope you enjoy browsing through our mix</p>
+            </div>
+        </div>
+    </header>
+    <!--Menu Banner-->
+
+    <!--Menu Items-->
+    <section class="menu-item-content py-5 mt-5">
+            <div class="container">
+                <div class="row align-items-center my-5"> 
+                    <div class="col-md-7">
+                        <div class="menu-item-holder pe-md-3 scrollable-col" style="height: 300px; overflow-y: auto;">
+                            <h2 id="coffee-section" class="fs-5 mb-3 menu-head"><a href="menu.html#coffee-section">Coffee</a></h2>
+                            <div class="container-fluid">
+                                <div class="row gx-3 gy-3">
+                                    <div class="col-12 col-md-6">
+                                        <div class="card border-dark-subtle">
+                                            <div class="card-body text-center p-4 p-xxl-5">
+                                                <img src="./img2/freepik__matcha-latte__2976-removebg-preview.png" alt="matcha-coffee"  width="78" height="78">
+                                                <h4 class="mb-4 menu-name">Dirty Matcha</h4>
+                                                <p class="mb-4 text-secondary">
+                                                    <span class="fw-bold" style="color: gold;">$</span> 
+                                                    <span class="price" data-price="41.00">41.00</span>
+                                                </p>
+                                                <div class="d-flex flex-wrap justify-content-between align-items-center mt-3">
+                                                    <!-- Cart button on the left -->
+                                                    <a href="#!" class="btn btn-outline-danger bsb-btn-circle">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-basket" viewBox="0 0 16 16">
+                                                            <path d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1v4.5a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 1 13.5V9a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h1.217L5.07 1.243a.5.5 0 0 1 .686-.172z"/>
+                                                        </svg>
+                                                    </a>
+
+                                                    <!-- Quantity controls on the right -->
+                                                    <div class="d-flex align-items-center gap-2 flex-wrap quantity-controls">
+                                                        <button class="btn btn-outline-danger bsb-btn-circle" onclick="decreaseQty(this)"> 
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dash" viewBox="0 0 16 16">
+                                                                <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8"/>
+                                                            </svg>
+                                                        </button>
+
+                                                        <span class="quantity px-2 fw-bold">1</span>
+
+                                                        <button class="btn btn-outline-success bsb-btn-circle" onclick="increaseQty(this)"> 
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
+                                                                <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
+                                                            </svg>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <div class="card border-dark-subtle">
+                                            <div class="card-body text-center p-4 p-xxl-5">
+                                                <img src="./img2/freepik_assistant_ube-latte-removebg-preview.png" alt="ube-latte" width="78" height="78">
+                                                <h4 class="mb-4 menu-name">Ube-Latte</h4>
+                                                <p class="mb-4 text-secondary">
+                                                    <span class="fw-bold" style="color: gold;">$</span> 
+                                                    <span class="price" data-price="40.00">40.00</span>
+                                                </p>
+                                                <div class="d-flex flex-wrap justify-content-between align-items-center mt-3">
+                                                    <!-- Cart button on the left -->
+                                                    <a href="#!" class="btn btn-outline-danger bsb-btn-circle">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-basket" viewBox="0 0 16 16">
+                                                            <path d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1v4.5a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 1 13.5V9a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h1.217L5.07 1.243a.5.5 0 0 1 .686-.172z"/>
+                                                        </svg>
+                                                    </a>
+
+                                                    <!-- Quantity controls on the right -->
+                                                    <div class="d-flex align-items-center gap-2 flex-wrap quantity-controls">
+                                                        <button class="btn btn-outline-danger bsb-btn-circle" onclick="decreaseQty(this)"> 
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dash" viewBox="0 0 16 16">
+                                                                <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8"/>
+                                                            </svg>
+                                                        </button>
+
+                                                        <span class="quantity px-2 fw-bold">1</span>
+
+                                                        <button class="btn btn-outline-success bsb-btn-circle" onclick="increaseQty(this)"> 
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
+                                                                <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
+                                                            </svg>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <div class="card border-dark-subtle">
+                                            <div class="card-body text-center p-4 p-xxl-5">
+                                                <img src="./img2/freepik__horchata-with-mud-splashes-cracked-glass-abandoned__2977-removebg-preview.png" alt="horchata" width="78" height="78">
+                                                <h4 class="mb-4 menu-name">Dirty Horchata</h4>
+                                                <p class="mb-4 text-secondary">
+                                                    <span class="fw-bold" style="color: gold;">$</span> 
+                                                    <span class="price" data-price="50.00">50.00</span>
+                                                </p>
+                                                <div class="d-flex flex-wrap justify-content-between align-items-center mt-3">
+                                                    <!-- Cart button on the left -->
+                                                    <a href="#!" class="btn btn-outline-danger bsb-btn-circle">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-basket" viewBox="0 0 16 16">
+                                                            <path d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1v4.5a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 1 13.5V9a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h1.217L5.07 1.243a.5.5 0 0 1 .686-.172z"/>
+                                                        </svg>
+                                                    </a>
+
+                                                    <!-- Quantity controls on the right -->
+                                                    <div class="d-flex align-items-center gap-2 flex-wrap quantity-controls">
+                                                        <button class="btn btn-outline-danger bsb-btn-circle" onclick="decreaseQty(this)"> 
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dash" viewBox="0 0 16 16">
+                                                                <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8"/>
+                                                            </svg>
+                                                        </button>
+
+                                                        <span class="quantity px-2 fw-bold">1</span>
+
+                                                        <button class="btn btn-outline-success bsb-btn-circle" onclick="increaseQty(this)"> 
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
+                                                                <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
+                                                            </svg>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <div class="card border-dark-subtle">
+                                            <div class="card-body text-center p-4 p-xxl-5">
+                                                <img src="./img2/close-up-delicious-coffee-with-cream-sugar-removebg-preview.png" alt="affogato" width="78" height="78">
+                                                <h4 class="mb-4 menu-name">Affogato</h4>
+                                                <p class="mb-4 text-secondary">
+                                                    <span class="fw-bold" style="color: gold;">$</span> 
+                                                    <span class="price" data-price="35.25">35.25</span>
+                                                </p>
+                                                <div class="d-flex flex-wrap justify-content-between align-items-center mt-3">
+                                                    <!-- Cart button on the left -->
+                                                    <a href="#!" class="btn btn-outline-danger bsb-btn-circle">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-basket" viewBox="0 0 16 16">
+                                                            <path d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1v4.5a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 1 13.5V9a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h1.217L5.07 1.243a.5.5 0 0 1 .686-.172z"/>
+                                                        </svg>
+                                                    </a>
+
+                                                    <!-- Quantity controls on the right -->
+                                                    <div class="d-flex align-items-center gap-2 flex-wrap quantity-controls">
+                                                        <button class="btn btn-outline-danger bsb-btn-circle" onclick="decreaseQty(this)"> 
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dash" viewBox="0 0 16 16">
+                                                                <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8"/>
+                                                            </svg>
+                                                        </button>
+
+                                                        <span class="quantity px-2 fw-bold">1</span>
+
+                                                        <button class="btn btn-outline-success bsb-btn-circle" onclick="increaseQty(this)"> 
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
+                                                                <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
+                                                            </svg>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <div class="card border-dark-subtle">
+                                            <div class="card-body text-center p-4 p-xxl-5">
+                                                <img src="./img2/delicious-cocktail-table-removebg-preview.png" alt="cold-brew-tonic" width="78" height="78">
+                                                <h4 class="mb-4 menu-name">Cold Brew Tonic</h4>
+                                                <p class="mb-4 text-secondary">
+                                                    <span class="fw-bold" style="color: gold;">$</span> 
+                                                    <span class="price" data-price="42.50">42.50</span>
+                                                </p>
+                                                <div class="d-flex flex-wrap justify-content-between align-items-center mt-3">
+                                                    <!-- Cart button on the left -->
+                                                    <a href="#!" class="btn btn-outline-danger bsb-btn-circle">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-basket" viewBox="0 0 16 16">
+                                                            <path d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1v4.5a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 1 13.5V9a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h1.217L5.07 1.243a.5.5 0 0 1 .686-.172z"/>
+                                                        </svg>
+                                                    </a>
+
+                                                    <!-- Quantity controls on the right -->
+                                                    <div class="d-flex align-items-center gap-2 flex-wrap quantity-controls">
+                                                        <button class="btn btn-outline-danger bsb-btn-circle" onclick="decreaseQty(this)"> 
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dash" viewBox="0 0 16 16">
+                                                                <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8"/>
+                                                            </svg>
+                                                        </button>
+
+                                                        <span class="quantity px-2 fw-bold">1</span>
+
+                                                        <button class="btn btn-outline-success bsb-btn-circle" onclick="increaseQty(this)"> 
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
+                                                                <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
+                                                            </svg>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <div class="card border-dark-subtle">
+                                            <div class="card-body text-center p-4 p-xxl-5">
+                                                <img src="./img2/decadent-caramel-drizzled-sundae-illustration-removebg-preview.png" alt="iced-brown" width="78" height="78">
+                                                <h4 class="mb-4 menu-name">Iced Brown</h4>
+                                                <p class="mb-4 text-secondary">
+                                                    <span class="fw-bold" style="color: gold;">$</span> 
+                                                    <span class="price" data-price="51.25">51.25</span>
+                                                </p>
+                                                <div class="d-flex flex-wrap justify-content-between align-items-center mt-3">
+                                                    <!-- Cart button on the left -->
+                                                    <a href="#!" class="btn btn-outline-danger bsb-btn-circle">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-basket" viewBox="0 0 16 16">
+                                                            <path d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1v4.5a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 1 13.5V9a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h1.217L5.07 1.243a.5.5 0 0 1 .686-.172z"/>
+                                                        </svg>
+                                                    </a>
+
+                                                    <!-- Quantity controls on the right -->
+                                                    <div class="d-flex align-items-center gap-2 flex-wrap quantity-controls">
+                                                        <button class="btn btn-outline-danger bsb-btn-circle" onclick="decreaseQty(this)"> 
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dash" viewBox="0 0 16 16">
+                                                                <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8"/>
+                                                            </svg>
+                                                        </button>
+
+                                                        <span class="quantity px-2 fw-bold">1</span>
+
+                                                        <button class="btn btn-outline-success bsb-btn-circle" onclick="increaseQty(this)"> 
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
+                                                                <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
+                                                            </svg>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--<a href="#" id="scroll-btn" class="btn btn-sm btn-success d-inline-flex align-items-center mb-md-0 mb-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-info-circle-fill me-2" viewBox="0 0 16 16">
+                                    <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2"/>
+                                </svg>
+                                Sign-up to get more info
+                            </a>-->
+                        <a href="#" class="scroll-btn btn btn-outline-primary bsb-btn-circle d-inline-flex align-items-center mb-md-0 mt-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-arrow-down-short" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="scroll-up-btn btn btn-outline-danger bsb-btn-circle d-inline-flex align-items-center mb-md-0 mt-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-arrow-up-short" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="menu-item-image">
+                            <img class="img-fluid full-width rounded shadow-sm" src="img2/coffee cup-pana.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="row align-items-center my-5">
+                    <div class="col-md-5">
+                        <div class="menu-item-image">
+                            <img class="img-fluid full-width rounded shadow-sm" src="img2/freepik__talk__95042.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-7">
+                        <div class="menu-item-holder pe-md-3 scrollable-col" style="height: 300px; overflow-y: auto;">
+                            <h2 id="juice-section" class="fs-5 mb-3 menu-head"><a href="menu.html#juice-section">Juice</a></h2>
+                            <div class="container-fluid">
+                                <div class="row gx-3 gy-3">
+                                    <div class="col-12 col-md-6">
+                                        <div class="card border-dark-subtle">
+                                            <div class="card-body text-center p-4 p-xxl-5">
+                                                <img src="./img2/tasty-purple-fruit-juices-with-copy-space-Photoroom.png" alt="purple-fruit-juices"  width="78" height="78">
+                                                <h4 class="mb-4 menu-name">Purple Fruit</h4>
+                                                <p class="mb-4 text-secondary">
+                                                    <span class="fw-bold" style="color: gold;">$</span> 
+                                                    <span class="price" data-price="41.00">68.00</span>
+                                                </p>
+                                                <div class="d-flex flex-wrap justify-content-between align-items-center mt-3">
+                                                    <!-- Cart button on the left -->
+                                                    <a href="#!" class="btn btn-outline-danger bsb-btn-circle">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-basket" viewBox="0 0 16 16">
+                                                            <path d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1v4.5a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 1 13.5V9a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h1.217L5.07 1.243a.5.5 0 0 1 .686-.172z"/>
+                                                        </svg>
+                                                    </a>
+
+                                                    <!-- Quantity controls on the right -->
+                                                    <div class="d-flex align-items-center gap-2 flex-wrap quantity-controls">
+                                                        <button class="btn btn-outline-danger bsb-btn-circle" onclick="decreaseQty(this)"> 
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dash" viewBox="0 0 16 16">
+                                                                <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8"/>
+                                                            </svg>
+                                                        </button>
+
+                                                        <span class="quantity px-2 fw-bold">1</span>
+
+                                                        <button class="btn btn-outline-success bsb-btn-circle" onclick="increaseQty(this)"> 
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
+                                                                <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
+                                                            </svg>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <div class="card border-dark-subtle">
+                                            <div class="card-body text-center p-4 p-xxl-5">
+                                                <img src="./img2/papaya-juice-serve-with-fresh-papaya-chopped-Photoroom.png" alt="papaya-juice" width="78" height="78">
+                                                <h4 class="mb-4 menu-name">Papaya-Juice</h4>
+                                                <p class="mb-4 text-secondary">
+                                                    <span class="fw-bold" style="color: gold;">$</span> 
+                                                    <span class="price" data-price="40.00">30.50</span>
+                                                </p>
+                                                <div class="d-flex flex-wrap justify-content-between align-items-center mt-3">
+                                                    <!-- Cart button on the left -->
+                                                    <a href="#!" class="btn btn-outline-danger bsb-btn-circle">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-basket" viewBox="0 0 16 16">
+                                                            <path d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1v4.5a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 1 13.5V9a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h1.217L5.07 1.243a.5.5 0 0 1 .686-.172z"/>
+                                                        </svg>
+                                                    </a>
+
+                                                    <!-- Quantity controls on the right -->
+                                                    <div class="d-flex align-items-center gap-2 flex-wrap quantity-controls">
+                                                        <button class="btn btn-outline-danger bsb-btn-circle" onclick="decreaseQty(this)"> 
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dash" viewBox="0 0 16 16">
+                                                                <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8"/>
+                                                            </svg>
+                                                        </button>
+
+                                                        <span class="quantity px-2 fw-bold">1</span>
+
+                                                        <button class="btn btn-outline-success bsb-btn-circle" onclick="increaseQty(this)"> 
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
+                                                                <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
+                                                            </svg>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <div class="card border-dark-subtle">
+                                            <div class="card-body text-center p-4 p-xxl-5">
+                                                <img src="./img2/green-basil-smoothie-Photoroom.png" alt="green-basil" width="78" height="78">
+                                                <h4 class="mb-4 menu-name">Green Basil</h4>
+                                                <p class="mb-4 text-secondary">
+                                                    <span class="fw-bold" style="color: gold;">$</span> 
+                                                    <span class="price" data-price="50.00">40.30</span>
+                                                </p>
+                                                <div class="d-flex flex-wrap justify-content-between align-items-center mt-3">
+                                                    <!-- Cart button on the left -->
+                                                    <a href="#!" class="btn btn-outline-danger bsb-btn-circle">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-basket" viewBox="0 0 16 16">
+                                                            <path d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1v4.5a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 1 13.5V9a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h1.217L5.07 1.243a.5.5 0 0 1 .686-.172z"/>
+                                                        </svg>
+                                                    </a>
+
+                                                    <!-- Quantity controls on the right -->
+                                                    <div class="d-flex align-items-center gap-2 flex-wrap quantity-controls">
+                                                        <button class="btn btn-outline-danger bsb-btn-circle" onclick="decreaseQty(this)"> 
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dash" viewBox="0 0 16 16">
+                                                                <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8"/>
+                                                            </svg>
+                                                        </button>
+
+                                                        <span class="quantity px-2 fw-bold">1</span>
+
+                                                        <button class="btn btn-outline-success bsb-btn-circle" onclick="increaseQty(this)"> 
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
+                                                                <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
+                                                            </svg>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <div class="card border-dark-subtle">
+                                            <div class="card-body text-center p-4 p-xxl-5">
+                                                <img src="./img2/moody-fruit-still-life-Photoroom.png" alt="moody-fruit" width="78" height="78">
+                                                <h4 class="mb-4 menu-name">Citrus Mood</h4>
+                                                <p class="mb-4 text-secondary">
+                                                    <span class="fw-bold" style="color: gold;">$</span> 
+                                                    <span class="price" data-price="35.25">44.25</span>
+                                                </p>
+                                                <div class="d-flex flex-wrap justify-content-between align-items-center mt-3">
+                                                    <!-- Cart button on the left -->
+                                                    <a href="#!" class="btn btn-outline-danger bsb-btn-circle">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-basket" viewBox="0 0 16 16">
+                                                            <path d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1v4.5a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 1 13.5V9a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h1.217L5.07 1.243a.5.5 0 0 1 .686-.172z"/>
+                                                        </svg>
+                                                    </a>
+
+                                                    <!-- Quantity controls on the right -->
+                                                    <div class="d-flex align-items-center gap-2 flex-wrap quantity-controls">
+                                                        <button class="btn btn-outline-danger bsb-btn-circle" onclick="decreaseQty(this)"> 
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dash" viewBox="0 0 16 16">
+                                                                <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8"/>
+                                                            </svg>
+                                                        </button>
+
+                                                        <span class="quantity px-2 fw-bold">1</span>
+
+                                                        <button class="btn btn-outline-success bsb-btn-circle" onclick="increaseQty(this)"> 
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
+                                                                <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
+                                                            </svg>
+                                                        </button>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <div class="card border-dark-subtle">
+                                            <div class="card-body text-center p-4 p-xxl-5">
+                                                <img src="./img2/close-up-foods-cocktails-tall-glass-Photoroom.png" alt="melon" width="78" height="78">
+                                                <h4 class="mb-4 menu-name">Melon Love</h4>
+                                                <p class="mb-4 text-secondary">
+                                                    <span class="fw-bold" style="color: gold;">$</span> 
+                                                    <span class="price" data-price="42.50">42.50</span>
+                                                </p>
+                                                <div class="d-flex flex-wrap justify-content-between align-items-center mt-3">
+                                                    <!-- Cart button on the left -->
+                                                    <a href="#!" class="btn btn-outline-danger bsb-btn-circle">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-basket" viewBox="0 0 16 16">
+                                                            <path d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1v4.5a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 1 13.5V9a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h1.217L5.07 1.243a.5.5 0 0 1 .686-.172z"/>
+                                                        </svg>
+                                                    </a>
+
+                                                    <!-- Quantity controls on the right -->
+                                                    <div class="d-flex align-items-center gap-2 flex-wrap quantity-controls">
+                                                        <button class="btn btn-outline-danger bsb-btn-circle" onclick="decreaseQty(this)"> 
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dash" viewBox="0 0 16 16">
+                                                                <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8"/>
+                                                            </svg>
+                                                        </button>
+
+                                                        <span class="quantity px-2 fw-bold">1</span>
+
+                                                        <button class="btn btn-outline-success bsb-btn-circle" onclick="increaseQty(this)"> 
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
+                                                                <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
+                                                            </svg>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <div class="card border-dark-subtle">
+                                            <div class="card-body text-center p-4 p-xxl-5">
+                                                <img src="./img2/almond-wooden-cup-white-wooden-table-side-view-Photoroom.png" alt="nut" width="78" height="78">
+                                                <h4 class="mb-4 menu-name">Nutty Mix</h4>
+                                                <p class="mb-4 text-secondary">
+                                                    <span class="fw-bold" style="color: gold;">$</span> 
+                                                    <span class="price" data-price="51.25">53.25</span>
+                                                </p>
+                                                <div class="d-flex flex-wrap justify-content-between align-items-center mt-3">
+                                                    <!-- Cart button on the left -->
+                                                    <a href="#!" class="btn btn-outline-danger bsb-btn-circle">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-basket" viewBox="0 0 16 16">
+                                                            <path d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1v4.5a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 1 13.5V9a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h1.217L5.07 1.243a.5.5 0 0 1 .686-.172z"/>
+                                                        </svg>
+                                                    </a>
+
+                                                    <!-- Quantity controls on the right -->
+                                                    <div class="d-flex align-items-center gap-2 flex-wrap quantity-controls">
+                                                        <button class="btn btn-outline-danger bsb-btn-circle" onclick="decreaseQty(this)"> 
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dash" viewBox="0 0 16 16">
+                                                                <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8"/>
+                                                            </svg>
+                                                        </button>
+
+                                                        <span class="quantity px-2 fw-bold">1</span>
+
+                                                        <button class="btn btn-outline-success bsb-btn-circle" onclick="increaseQty(this)"> 
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
+                                                                <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
+                                                            </svg>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--<a href="#" id="scroll-btn" class="btn btn-sm btn-success d-inline-flex align-items-center mb-md-0 mb-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-info-circle-fill me-2" viewBox="0 0 16 16">
+                                    <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2"/>
+                                </svg>
+                                Sign-up to get more info
+                            </a>-->
+                        <a href="#" class="scroll-btn btn btn-outline-primary bsb-btn-circle d-inline-flex align-items-center mb-md-0 mt-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-arrow-down-short" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="scroll-up-btn btn btn-outline-danger bsb-btn-circle d-inline-flex align-items-center mb-md-0 mt-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-arrow-up-short" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="row align-items-center my-5">
+                    <div class="col-md-7">
+                        <div class="menu-item-holder pe-md-3 scrollable-col" style="height: 300px; overflow-y: auto;">
+                            <h2 id="dessert-section" class="fs-5 mb-3 menu-head"><a href="menu.html#dessert-section">Dessert</a></h2>
+                            <div class="container-fluid">
+                                <div class="row gx-3 gy-3">
+                                    <div class="col-12 col-md-6">
+                                        <div class="card border-dark-subtle">
+                                            <div class="card-body text-center p-4 p-xxl-5">
+                                                <img src="./img2/freepik__a-juicy-chicken-sandwich-on-a-wooden-table-soft-wi__2975-removebg-preview.png" alt="juicy-chicken-sandwich"  width="78" height="78">
+                                                <h4 class="mb-4 menu-name">Double Patty</h4>
+                                                <p class="mb-4 text-secondary">
+                                                    <span class="fw-bold" style="color: gold;">$</span> 
+                                                    <span class="price" data-price="41.00">36.00</span>
+                                                </p>
+                                                <div class="d-flex flex-wrap justify-content-between align-items-center mt-3">
+                                                    <!-- Cart button on the left -->
+                                                    <a href="#!" class="btn btn-outline-danger bsb-btn-circle">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-basket" viewBox="0 0 16 16">
+                                                            <path d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1v4.5a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 1 13.5V9a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h1.217L5.07 1.243a.5.5 0 0 1 .686-.172z"/>
+                                                        </svg>
+                                                    </a>
+
+                                                    <!-- Quantity controls on the right -->
+                                                    <div class="d-flex align-items-center gap-2 flex-wrap quantity-controls">
+                                                        <button class="btn btn-outline-danger bsb-btn-circle" onclick="decreaseQty(this)"> 
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dash" viewBox="0 0 16 16">
+                                                                <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8"/>
+                                                            </svg>
+                                                        </button>
+
+                                                        <span class="quantity px-2 fw-bold">1</span>
+
+                                                        <button class="btn btn-outline-success bsb-btn-circle" onclick="increaseQty(this)"> 
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
+                                                                <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
+                                                            </svg>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <div class="card border-dark-subtle">
+                                            <div class="card-body text-center p-4 p-xxl-5">
+                                                <img src="./img2/closeup-cocktail-sour-removebg-preview.png" alt="cocktail-sour" width="78" height="78">
+                                                <h4 class="mb-4 menu-name">Cocktail-sour</h4>
+                                                <p class="mb-4 text-secondary">
+                                                    <span class="fw-bold" style="color: gold;">$</span> 
+                                                    <span class="price" data-price="40.00">50.00</span>
+                                                </p>
+                                                <div class="d-flex flex-wrap justify-content-between align-items-center mt-3">
+                                                    <!-- Cart button on the left -->
+                                                    <a href="#!" class="btn btn-outline-danger bsb-btn-circle">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-basket" viewBox="0 0 16 16">
+                                                            <path d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1v4.5a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 1 13.5V9a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h1.217L5.07 1.243a.5.5 0 0 1 .686-.172z"/>
+                                                        </svg>
+                                                    </a>
+
+                                                    <!-- Quantity controls on the right -->
+                                                    <div class="d-flex align-items-center gap-2 flex-wrap quantity-controls">
+                                                        <button class="btn btn-outline-danger bsb-btn-circle" onclick="decreaseQty(this)"> 
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dash" viewBox="0 0 16 16">
+                                                            <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8"/>
+                                                        </svg>
+                                                        </button>
+
+                                                        <span class="quantity px-2 fw-bold">1</span>
+
+                                                        <button class="btn btn-outline-success bsb-btn-circle" onclick="increaseQty(this)"> 
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
+                                                                <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
+                                                            </svg>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <div class="card border-dark-subtle">
+                                            <div class="card-body text-center p-4 p-xxl-5">
+                                                <img src="./img2/chocolate-raspberry-cake-Photoroom.png" alt="chocolate-raspberry-cake" width="78" height="78">
+                                                <h4 class="mb-4 menu-name">Chocolate Raspberry</h4>
+                                                <p class="mb-4 text-secondary">
+                                                    <span class="fw-bold" style="color: gold;">$</span> 
+                                                    <span class="price" data-price="50.00">60.00</span>
+                                                </p>
+                                                <div class="d-flex flex-wrap justify-content-between align-items-center mt-3">
+                                                    <!-- Cart button on the left -->
+                                                    <a href="#!" class="btn btn-outline-danger bsb-btn-circle">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-basket" viewBox="0 0 16 16">
+                                                            <path d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1v4.5a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 1 13.5V9a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h1.217L5.07 1.243a.5.5 0 0 1 .686-.172z"/>
+                                                        </svg>
+                                                    </a>
+
+                                                    <!-- Quantity controls on the right -->
+                                                    <div class="d-flex align-items-center gap-2 flex-wrap quantity-controls">
+                                                        <button class="btn btn-outline-danger bsb-btn-circle" onclick="decreaseQty(this)"> 
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dash" viewBox="0 0 16 16">
+                                                                <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8"/>
+                                                            </svg>
+                                                        </button>
+
+                                                        <span class="quantity px-2 fw-bold">1</span>
+
+                                                        <button class="btn btn-outline-success bsb-btn-circle" onclick="increaseQty(this)"> 
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
+                                                                <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
+                                                            </svg>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <div class="card border-dark-subtle">
+                                            <div class="card-body text-center p-4 p-xxl-5">
+                                                <img src="./img2/sandwich.png" alt="chicken-sandwich" width="78" height="78">
+                                                <h4 class="mb-4 menu-name">Chicken Sandwich</h4>
+                                                <p class="mb-4 text-secondary">
+                                                    <span class="fw-bold" style="color: gold;">$</span> 
+                                                    <span class="price" data-price="35.25">35.25</span>
+                                                </p>
+                                                <div class="d-flex flex-wrap justify-content-between align-items-center mt-3">
+                                                    <!-- Cart button on the left -->
+                                                    <a href="#!" class="btn btn-outline-danger bsb-btn-circle">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-basket" viewBox="0 0 16 16">
+                                                            <path d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1v4.5a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 1 13.5V9a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h1.217L5.07 1.243a.5.5 0 0 1 .686-.172z"/>
+                                                        </svg>
+                                                    </a>
+
+                                                    <!-- Quantity controls on the right -->
+                                                    <div class="d-flex align-items-center gap-2 flex-wrap quantity-controls">
+                                                        <button class="btn btn-outline-danger bsb-btn-circle" onclick="decreaseQty(this)"> 
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dash" viewBox="0 0 16 16">
+                                                                <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8"/>
+                                                            </svg>
+                                                        </button>
+
+                                                        <span class="quantity px-2 fw-bold">1</span>
+
+                                                        <button class="btn btn-outline-success bsb-btn-circle" onclick="increaseQty(this)"> 
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
+                                                                <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
+                                                            </svg>
+                                                        </button>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <div class="card border-dark-subtle">
+                                            <div class="card-body text-center p-4 p-xxl-5">
+                                                <img src="./img2/ice-cream-sundea-Photoroom.png" alt="ice-cream-sundea" width="78" height="78">
+                                                <h4 class="mb-4 menu-name">IceCream-Sundea</h4>
+                                                <p class="mb-4 text-secondary">
+                                                    <span class="fw-bold" style="color: gold;">$</span> 
+                                                    <span class="price" data-price="42.50">28.50</span>
+                                                </p>
+                                                <div class="d-flex flex-wrap justify-content-between align-items-center mt-3">
+                                                    <!-- Cart button on the left -->
+                                                    <a href="#!" class="btn btn-outline-danger bsb-btn-circle">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-basket" viewBox="0 0 16 16">
+                                                            <path d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1v4.5a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 1 13.5V9a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h1.217L5.07 1.243a.5.5 0 0 1 .686-.172z"/>
+                                                        </svg>
+                                                    </a>
+
+                                                    <!-- Quantity controls on the right -->
+                                                    <div class="d-flex align-items-center gap-2 flex-wrap quantity-controls">
+                                                        <button class="btn btn-outline-danger bsb-btn-circle" onclick="decreaseQty(this)"> 
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dash" viewBox="0 0 16 16">
+                                                                <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8"/>
+                                                            </svg>
+                                                        </button>
+
+                                                        <span class="quantity px-2 fw-bold">1</span>
+
+                                                        <button class="btn btn-outline-success bsb-btn-circle" onclick="increaseQty(this)"> 
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
+                                                                <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
+                                                            </svg>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <div class="card border-dark-subtle">
+                                            <div class="card-body text-center p-4 p-xxl-5">
+                                                <img src="./img2/donuts-set-Photoroom.png" alt="donuts-set" width="78" height="78">
+                                                <h4 class="mb-4 menu-name">Donut-Set</h4>
+                                                <p class="mb-4 text-secondary">
+                                                    <span class="fw-bold" style="color: gold;">$</span> 
+                                                    <span class="price" data-price="51.25">38.25</span>
+                                                </p>
+                                                <div class="d-flex flex-wrap justify-content-between align-items-center mt-3">
+                                                    <!-- Cart button on the left -->
+                                                    <a href="#!" class="btn btn-outline-danger bsb-btn-circle">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-basket" viewBox="0 0 16 16">
+                                                            <path d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1v4.5a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 1 13.5V9a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h1.217L5.07 1.243a.5.5 0 0 1 .686-.172z"/>
+                                                        </svg>
+                                                    </a>
+
+                                                    <!-- Quantity controls on the right -->
+                                                    <div class="d-flex align-items-center gap-2 flex-wrap quantity-controls">
+                                                        <button class="btn btn-outline-danger bsb-btn-circle" onclick="decreaseQty(this)"> 
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dash" viewBox="0 0 16 16">
+                                                                <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8"/>
+                                                            </svg>
+                                                        </button>
+
+                                                        <span class="quantity px-2 fw-bold">1</span>
+
+                                                        <button class="btn btn-outline-success bsb-btn-circle" onclick="increaseQty(this)"> 
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
+                                                                <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
+                                                            </svg>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--<a href="#" id="scroll-btn" class="btn btn-sm btn-success d-inline-flex align-items-center mb-md-0 mb-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-info-circle-fill me-2" viewBox="0 0 16 16">
+                                    <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2"/>
+                                </svg>
+                                Sign-up to get more info
+                            </a>-->
+                        <a href="#" class="scroll-btn btn btn-outline-primary bsb-btn-circle d-inline-flex align-items-center mb-md-0 mt-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-arrow-down-short" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="scroll-up-btn btn btn-outline-danger bsb-btn-circle d-inline-flex align-items-center mb-md-0 mt-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-arrow-up-short" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="menu-item-image">
+                            <img class="img-fluid full-width rounded shadow-sm" src="img2/sweet-shop-background-illustration.png" alt="">
+                        </div>
+                    </div>
+                </div> 
+            </div>
+    </section>
+    <!--Menu Items-->   
+
+    <!--Cart-->
+    <div class="cart-item">
+        <h3>Your Cart</h3>
+
+        <div class="cart-items-list">
+            <!-- Cart items will be dynamically added here -->
+            <!--<div class="item">
+                <div class="item-image">
+                    <img src="./img2/matcha-tea.png" alt="matcha-coffee">
+                </div>
+                <div class="item-details">
+                    <h4 class="item-name">Dirty Match</h4>
+                    <h4 class="item-price">$41.00</h4>
+                </div>
+                <div class="flex">
+                    <a href="#" class="quantity-btn">
+                        <i class="fa-solid fa-minus"></i>
+                    </a>
+                    <span class="quantity-value">1</span>
+                    <a href="#" class="quantity-btn">
+                        <i class="fa-solid fa-plus"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-image">
+                    <img src="./img2/matcha-tea.png" alt="matcha-coffee">
+                </div>
+                <div class="item-details">
+                    <h4 class="item-name">Dirty Match</h4>
+                    <h4 class="item-price">$41.00</h4>
+                </div>
+                <div class="flex">
+                    <a href="#" class="quantity-btn">
+                        <i class="fa-solid fa-minus"></i>
+                    </a>
+                    <span class="quantity-value">1</span>
+                    <a href="#" class="quantity-btn">
+                        <i class="fa-solid fa-plus"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-image">
+                    <img src="./img2/matcha-tea.png" alt="matcha-coffee">
+                </div>
+                <div class="item-details">
+                    <h4 class="item-name">Dirty Match</h4>
+                    <h4 class="item-price">$41.00</h4>
+                </div>
+                <div class="flex">
+                    <a href="#" class="quantity-btn">
+                        <i class="fa-solid fa-minus"></i>
+                    </a>
+                    <span class="quantity-value">1</span>
+                    <a href="#" class="quantity-btn">
+                        <i class="fa-solid fa-plus"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-image">
+                    <img src="./img2/matcha-tea.png" alt="matcha-coffee">
+                </div>
+                <div class="item-details">
+                    <h4 class="item-name">Dirty Match</h4>
+                    <h4 class="item-price">$41.00</h4>
+                </div>
+                <div class="flex">
+                    <a href="#" class="quantity-btn">
+                        <i class="fa-solid fa-minus"></i>
+                    </a>
+                    <span class="quantity-value">1</span>
+                    <a href="#" class="quantity-btn">
+                        <i class="fa-solid fa-plus"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-image">
+                    <img src="./img2/matcha-tea.png" alt="matcha-coffee">
+                </div>
+                <div class="item-details">
+                    <h4 class="item-name">Dirty Match</h4>
+                    <h4 class="item-price">$41.00</h4>
+                </div>
+                <div class="flex">
+                    <a href="#" class="quantity-btn">
+                        <i class="fa-solid fa-minus"></i>
+                    </a>
+                    <span class="quantity-value">1</span>
+                    <a href="#" class="quantity-btn">
+                        <i class="fa-solid fa-plus"></i>
+                    </a>
+                </div>
+            </div>-->
+        </div>
+
+        <div class="cart-total">
+            <span>Total:</span>
+            <span class="total-amount">$0.00</span>
+        </div>
+
+        <div class="pickup">
+            <label>
+                <input type="radio" name="order-type" class="pickup-radio">
+                Pick-Up Order
+            </label>
+            <label>
+                <input type="radio" name="order-type" class="delivery-radio">
+                Delivery Order
+            </label>
+        </div>
+
+        <div class="btn-container">
+            <button class="btn btn-outline-warning bsb-btn-circle close-btn">
+                <i class="fa-solid fa-arrow-left"></i>
+            </button>
+            <button class="btn btn-outline-danger bsb-btn-circle clear-cart-btn">
+                <i class="fa-solid fa-arrow-rotate-right"></i>
+            </button>
+            <button class="btn btn-outline-success bsb-btn-circle checkout-btn">
+                <i class="fa-regular fa-credit-card"></i>
+            </button>
+        </div>
+    </div>
+    <!--Cart-->
+
+    <!--Message-->
+    <section class="message-wrapper py-5 mt-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-10 col-lg-10">
+                    <div class="message-box bg-light border rounded shadow-sm">
+                        <h1 class="text-center py-3 message-heading">Our Services</h1>
+                        <div class="row g-4">
+                            <div class="col-12 col-md-4">
+                            <div class="border rounded shadow-sm p-3 text-center">
+                                <h5 style="color: aqua;" class="message-sub_heading">Delivery</h5>
+                                <img src="./img2/delivery.gif" class="img-fluid mb-2" alt="Delivery">
+                                <p class="text-secondary fs-6 fw-light">We provide delivery to you at your door step</p>
+                            </div>
+                            </div>
+                            <div class="col-12 col-md-4">
+                            <div class="border rounded shadow-sm p-3 text-center">
+                                <h5 style="color: palevioletred;" class="message-sub_heading">Pick-Up</h5>
+                                <img src="./img2/food-pickup.gif" class="img-fluid mb-2" alt="Pick-Up">
+                                <p class="text-secondary fs-6 fw-light">Call to order and pickup when you're ready</p>
+                            </div>
+                            </div>
+                            <div class="col-12 col-md-4">
+                            <div class="border rounded shadow-sm p-3 text-center">
+                                <h5 style="color: greenyellow;" class="message-sub_heading">Dining</h5>
+                                <img src="./img2/eat.gif" class="img-fluid mb-2" alt="Dining">
+                                <p class="text-secondary fs-6 fw-light">We provide nice space for a fine dining experience</p>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Message-->
+
+   
+    <!--footer-->
+    <section class="news py-5">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-lg-9 m-auto text-center">
+                    <h1 class="footer-heading">Join Our Mix Family</h1>
+                    <input type="text" class="px-3" placeholder="Enter Your Email">
+                    <button class="btn2">Submit</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-11 m-auto">
+                    <div class="row">
+                        <div class="col-lg-3 py-3">
+                            <h5 class="pb-3">CUSTOMER CARE</h5>
+                            <P>Regular</P>
+                            <p>On Time</p>
+                            <p>Always Care</p>
+                        </div>
+                        <div class="col-lg-3 py-3">
+                            <h5 class="pb-3">CUSTOMER CARE</h5>
+                            <P>Regular</P>
+                            <p>On Time</p>
+                            <p>Always Care</p>
+                        </div>
+                        <div class="col-lg-3 py-3">
+                            <h5 class="pb-3">CUSTOMER CARE</h5>
+                            <P>Regular</P>
+                            <p>On Time</p>
+                            <p>Always Care</p>
+                        </div>
+                        <div class="col-lg-3 py-3">
+                            <h5 class="pb-3">CUSTOMER CARE</h5>
+                            <span><i class="fab fa-facebook"></i></span>
+                            <span><i class="fab fa-instagram"></i></span>
+                            <span><i class="fab fa-twitter"></i></span>
+                            <span><i class="fab fa-google-plus"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <p class="text-center">Copyright ©2022 All rights reserved | This template is made with by Angelfav</p>
+        </div>
+    </section>
+    <!--footer-->
+
+    
+
+
+ 
+    
+   
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // For the Scroll Button
+        document.addEventListener('DOMContentLoaded', function() {
+            function findScrollable(btn) {
+                // prefer closest .scrollable-col (or fallback to old id if still present)
+                const scope = btn.closest('.row') || btn.closest('section') || document;
+                return scope.querySelector('.scrollable-col, #scrollable-col');
+            }
+
+            document.querySelectorAll('.scroll-btn').forEach(btn => {
+                btn.addEventListener('click', function(e) {
+                e.preventDefault();
+                const container = findScrollable(this);
+                if (container) container.scrollBy({ top: 120, behavior: 'smooth' });
+                // (Removed extraneous closing parenthesis and brace)
+            });
+
+            document.querySelectorAll('.scroll-up-btn').forEach(btn => {
+                btn.addEventListener('click', function(e) {
+                e.preventDefault();
+                const container = findScrollable(this);
+                if (container) container.scrollBy({ top: -120, behavior: 'smooth' });
+                });
+            });
+        });
+
+        // Quantity Increase/Decrease Functions
+        window.increaseQty = function (button) {
+        const card = button.closest('.card');
+        if (!card) return;
+        const quantityEl = card.querySelector('.quantity');
+        const priceEl = card.querySelector('.price');
+        const basePrice = parseFloat(priceEl?.dataset?.price);
+        const safeBase = Number.isFinite(basePrice) ? basePrice : parseFloat(priceEl?.textContent) || 0;
+        let quantity = parseInt(quantityEl.textContent, 10) || 1;
+        quantity++;
+        quantityEl.textContent = quantity;
+        priceEl.textContent = (safeBase * quantity).toFixed(2);
+        };
+
+        window.decreaseQty = function (button) {
+        const card = button.closest('.card');
+        if (!card) return;
+        const quantityEl = card.querySelector('.quantity');
+        const priceEl = card.querySelector('.price');
+        const basePrice = parseFloat(priceEl?.dataset?.price);
+        const safeBase = Number.isFinite(basePrice) ? basePrice : parseFloat(priceEl?.textContent) || 0;
+        let quantity = parseInt(quantityEl.textContent, 10) || 1;
+        if (quantity > 1) {
+            quantity--;
+            quantityEl.textContent = quantity;
+            priceEl.textContent = (safeBase * quantity).toFixed(2);
+        }
+        };
+
+
+        // Increse/decrease price based on quantity
+        
+        
+        function increaseQty(button) {
+            const card = button.closest('.card');
+            const quantityEl = card.querySelector('.quantity');
+            const priceEl = card.querySelector('.price');
+            const basePrice = parseFloat(priceEl.dataset.price);
+
+            let quantity = parseInt(quantityEl.textContent);
+            quantity++;
+            quantityEl.textContent = quantity;
+            priceEl.textContent = (basePrice * quantity).toFixed(2);
+        }
+
+        function decreaseQty(button) {
+            const card = button.closest('.card');
+            const quantityEl = card.querySelector('.quantity');
+            const priceEl = card.querySelector('.price');
+            const basePrice = parseFloat(priceEl.dataset.price);
+
+            let quantity = parseInt(quantityEl.textContent);
+            if (quantity > 1) {
+            quantity--;
+            quantityEl.textContent = quantity;
+            priceEl.textContent = (basePrice * quantity).toFixed(2);
+            }
+        }
+
+        //cart icon click to open cart//
+
+
+        // render one product card and return element
+        function createProductCard(product, index) {
+            const col = document.createElement('div');
+            col.className = 'col-12 col-md-6';
+            col.innerHTML = `
+            <div class="card border-dark-subtle">
+                <div class="card-body text-center p-4 p-xxl-5">
+                <img src="${product.image}" alt="${product.name}" width="78" height="78">
+                <h4 class="mb-4 menu-name">${product.name}</h4>
+                <p class="mb-4 text-secondary">
+                    <span class="fw-bold" style="color: gold;">$</span>
+                    <span class="price" data-price="${Number(product.price).toFixed(2)}">${Number(product.price).toFixed(2)}</span>
+                </p>
+                <div class="d-flex flex-wrap justify-content-between align-items-center mt-3">
+                    <a href="#!" class="btn btn-outline-danger bsb-btn-circle add-to-cart" data-index="${index}">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-basket" viewBox="0 0 16 16"><path d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1v4.5a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 1 13.5V9a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h1.217L5.07 1.243a.5.5 0 0 1 .686-.172z"/></svg>
+                    </a>
+                    <div class="d-flex align-items-center gap-2 flex-wrap quantity-controls">
+                    <button class="btn btn-outline-danger bsb-btn-circle" onclick="decreaseQty(this)"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dash" viewBox="0 0 16 16"><path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8"/></svg></button>
+                    <span class="quantity px-2 fw-bold">1</span>
+                    <button class="btn btn-outline-success bsb-btn-circle" onclick="increaseQty(this)"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16"><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/></svg></button>
+                    </div>
+                </div>
+                </div>
+            </div>
+            `;
+            return col;
+        }
+
+        // render products into holders: match by menu-head text
+        function renderProducts() {
+            const holders = document.querySelectorAll('.menu-item-holder');
+            holders.forEach(holder => {
+            const head = holder.querySelector('.menu-head')?.textContent?.trim() || '';
+            const row = holder.querySelector('.container-fluid .row') || holder.querySelector('.row') || holder;
+            if (!row) return;
+            row.innerHTML = '';
+            // pick products that match category if product.category exists
+            const filtered = products.filter(p => p.category ? p.category === head : true);
+            filtered.forEach((p, i) => {
+                // index relative to products array
+                const prodIndex = products.indexOf(p);
+                row.appendChild(createProductCard(p, prodIndex));
+            });
+            });
+        }
+
+      // cart helpers
+        const cartItemsList = document.querySelector('.cart-items-list');
+      const totalAmountEl = document.querySelector('.total-amount');
+      const cartValueEls = document.querySelectorAll('.cart-value');
+      const cartPanel = document.querySelector('.cart-item');
+      const closeBtn = document.querySelector('.close-btn');
+      const clearBtn = document.querySelector('.clear-cart-btn');
+      const deliveryCheckbox = document.querySelector('.delivery-radio');
+      const pickupCheckbox = document.querySelector('.pickup-radio');
+
+      let products = [];
+      let cart = [];
+
+      const fmt = v => '$' + Number(v || 0).toFixed(2);
+
+      function updateCartUI() {
+        if (!cartItemsList) return;
+        cartItemsList.innerHTML = '';
+        let total = 0;
+        cart.forEach(item => {
+          const priceNum = Number(item.price) || 0;
+          total += priceNum * item.qty;
+          const div = document.createElement('div');
+          div.className = 'item d-flex align-items-center gap-3 mb-3';
+          div.dataset.name = item.name;
+          div.innerHTML = `
+            <div class="item-image" style="width:56px;flex:0 0 56px;"><img src="${item.image}" class="img-fluid"></div>
+            <div class="item-details flex-grow-1">
+              <h4 class="item-name mb-1">${item.name}</h4>
+              <h4 class="item-price mb-0">${fmt(priceNum * item.qty)}</h4>
+            </div>
+            <div class="d-flex align-items-center gap-2">
+              <a href="#" class="btn btn-sm btn-outline-secondary cart-minus">-</a>
+              <span class="quantity-value">${item.qty}</span>
+              <a href="#" class="btn btn-sm btn-outline-secondary cart-plus">+</a>
+            </div>
+          `;
+          div.querySelector('.cart-minus').addEventListener('click', e => { e.preventDefault(); changeQty(item.name, -1); });
+          div.querySelector('.cart-plus').addEventListener('click', e => { e.preventDefault(); changeQty(item.name, +1); });
+          cartItemsList.appendChild(div);
+        });
+        const deliveryFee = deliveryCheckbox && deliveryCheckbox.checked ? 20 : 0;
+        total += deliveryFee;
+        if (totalAmountEl) totalAmountEl.textContent = fmt(total);
+        cartValueEls.forEach(el => el.textContent = cart.reduce((s,i) => s + i.qty, 0));
+      }
+
+      function changeQty(name, delta) {
+        const idx = cart.findIndex(i => i.name === name);
+        if (idx === -1) return;
+        cart[idx].qty += delta;
+        if (cart[idx].qty <= 0) cart.splice(idx, 1);
+        updateCartUI();
+      }
+
+      function addToCartByProduct(product) {
+        if (!product || !product.name) return;
+        const priceNum = Number(product.price) || 0;
+        const existing = cart.find(i => i.name === product.name);
+        if (existing) existing.qty += 1;
+        else cart.push({ name: product.name, price: priceNum, image: product.image || '', qty: 1 });
+        updateCartUI();
+        // DO NOT auto-open cart panel here (user requested cart open only on navbar icon)
+      }
+
+      // Event delegation: add to cart
+     
+        function addToCartByProduct(product, qty = 1) { // Add qty parameter
+            if (!product || !product.name) return;
+            const priceNum = Number(product.price) || 0;
+            const existing = cart.find(i => i.name === product.name);
+            if (existing) existing.qty += qty; // Use qty to increase the quantity
+            else cart.push({ name: product.name, price: priceNum, image: product.image || '', qty: qty }); // Set qty
+            updateCartUI();
+        }
+
+        // Event delegation: add to cart
+        document.addEventListener('click', function (e) {
+            const btn = e.target.closest('.add-to-cart, a.btn.btn-outline-danger.bsb-btn-circle');
+            if (!btn) return;
+            e.preventDefault();
+            const card = btn.closest('.card');
+            if (!card) return;
+            const quantityEl = card.querySelector('.quantity'); // Get the quantity element
+            const quantity = parseInt(quantityEl.textContent) || 1; // Get the current quantity
+            const name = card.querySelector('.menu-name')?.textContent?.trim() || 'Item';
+            const priceEl = card.querySelector('.price');
+            let price = 0;
+            if (priceEl) {
+                price = parseFloat(priceEl.dataset.price || priceEl.textContent) || 0;
+            }
+            const image = card.querySelector('img')?.getAttribute('src') || '';
+            addToCartByProduct({ name, price, image }, quantity); // Pass quantity to addToCartByProduct
+        });
+
+
+      // Cart icon toggles cart panel
+      document.querySelectorAll('.cart-icon').forEach(icon => {
+        icon.addEventListener('click', function (e) {
+          e.preventDefault();
+          if (!cartPanel) return;
+          cartPanel.classList.toggle('cart-item-active');
+        });
+      });
+
+      // Radio button event listeners
+      if (deliveryCheckbox) deliveryCheckbox.addEventListener('change', updateCartUI);
+      if (pickupCheckbox) pickupCheckbox.addEventListener('change', updateCartUI);
+
+      // Clear and close buttons
+      if (clearBtn) clearBtn.addEventListener('click', e => { e.preventDefault(); cart = []; if (deliveryCheckbox) deliveryCheckbox.checked = false; if (pickupCheckbox) pickupCheckbox.checked = false; updateCartUI(); });
+      if (closeBtn) closeBtn.addEventListener('click', e => { e.preventDefault(); if (cartPanel) cartPanel.classList.remove('cart-item-active'); });
+
+      // Checkout button
+      document.querySelector('.checkout-btn').addEventListener('click', function(e) {
+        e.preventDefault();
+        if (cart.length === 0) {
+          alert('Your cart is empty!');
+          return;
+        }
+        // Save cart to localStorage
+        localStorage.setItem('checkoutCart', JSON.stringify(cart));
+        localStorage.setItem('orderType', deliveryCheckbox && deliveryCheckbox.checked ? 'delivery' : 'pickup');
+        // Navigate to checkout
+        window.location.href = 'checkout.html';
+      });
+
+      // Products loader (optional)
+      function iniApp() {
+        fetch('products.json').then(r => {
+          if (!r.ok) throw new Error('Fetch failed');
+          return r.json();
+        }).then(data => {
+          products = Array.isArray(data) ? data : [];
+          // if you want to render products dynamically into holders, call renderProducts() here
+          // renderProducts();
+        }).catch(err => {
+          console.warn('products.json not loaded or missing — using static HTML items', err);
+        });
+      }
+      iniApp();
+
+      // ensure initial UI reflects empty cart
+      updateCartUI();
+    });
+
+
+
+    </script>
+</body>
+</html>

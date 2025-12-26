@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Coffee Mix</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/c26cd2166c.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/bs-brain@2.0.4/utilities/bsb-btn-circle/bsb-btn-circle.css">
+    <link rel="stylesheet" href="https://unpkg.com/bs-brain@2.0.4/utilities/margin/margin.css">
+    <link rel="stylesheet" href="https://unpkg.com/bs-brain@2.0.4/utilities/padding/padding.css">
+
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Pacifico&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,700&family=Lobster&family=Pacifico&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,700&family=Lobster&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Pacifico&display=swap');
+    </style>
+</head>
+<body>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg bg-white small border-bottom shadow-sm fixed-top customize-nav" style="--bs-bg-opacity: .3;">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <span class="brand-style brand-gradient">Coffee Mix</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#coffee-navbar" aria-controls="coffee-navbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="coffee-navbar">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="main.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="menu.html">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="store.html">Store</a>
+                    </li>
+                </ul>
+                <form class="d-flex position-relative" role="search">
+                    <div class="input-group">
+                        <input class="form-control form-control-sm" type="search" id="search-input" placeholder="Search menu items..." autocomplete="off"/>
+                        <button class="btn btn-sm btn-outline-danger" type="submit">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                            </svg>  
+                        </button>
+                    </div>
+                    <div id="search-suggestions" class="position-absolute bg-white border rounded shadow-sm" style="top: 100%; left: 0; right: 0; z-index: 1000; display: none; max-height: 200px; overflow-y: auto;"></div>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!--Navbar-->
+
+    <!--Banner section-->
+    <section class="banner-holder pt-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <div class="banner-content text-center text-white my-5 py-5"> <!--my-5 replaces mt-5 and mb-5 same goes for the py-->
+                        <h1>Nature's Finest</h1>
+                        <p>The Finest Coffee Blend To Find</p>
+                        <a href="#" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#subscribe-modal">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-check-fill" viewBox="0 0 16 16">
+                                <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.026A2 2 0 0 0 2 14h6.256A4.5 4.5 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586zM16 4.697v4.974A4.5 4.5 0 0 0 12.5 8a4.5 4.5 0 0 0-1.965.45l-.338-.207z"/>
+                                <path d="M16 12.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0m-1.993-1.679a.5.5 0 0 0-.686.172l-1.17 1.95-.547-.547a.5.5 0 0 0-.708.708l.774.773a.75.75 0 0 0 1.174-.144l1.335-2.226a.5.5 0 0 0-.172-.686"/>
+                            </svg>
+                            Subscribe for Newsletters
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Banner section-->
+
+    <!--Home Section-->
+    <section class="home-posts py-5 mt-5"><!--py will add padding top and bottom-->
+        <div class="container">
+            <div class="row justify-content-center align-items-center g-4">
+                <div class="col-md-3">
+                    <div class="card border-0 mb-3">
+                        <img class="card-img-top" src="img/Coffee-Tea-2--Streamline-Barcelona.png" alt="Post Image">
+                        <div class="card-body">
+                            <h3 class="fs-5 fw-light">Coffee</h3> 
+                            <a href="menu.html#coffee-section" class="btn btn-outline-danger bsb-btn-circle">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                                </svg>
+                            </a>   
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card border-0  mb-3">
+                        <img class="card-img-top" src="img/Fruit-Juice--Streamline-Ux.png" alt="Post Image">
+                        <div class="card-body">
+                            <h3 class="fs-5 fw-light">Juice</h3> 
+                            <a href="menu.html#juice-section" class="btn btn-outline-danger bsb-btn-circle">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                                </svg>
+                            </a>   
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card border-0  mb-3">
+                        <img class="card-img-top" src="img/Dessert--Streamline-Manchester.png" alt="Post Image">
+                        <div class="card-body">
+                            <h3 class="fs-5 fw-light">Dessert</h3> 
+                            <a href="menu.html#dessert-section" class="btn btn-outline-danger bsb-btn-circle">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                                </svg>
+                            </a>   
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Home Section-->
+
+    <!--Trending
+    <section class="trending-post trending-transparent py-5"><!py will add padding top and bottom>
+        <div class="bg-js"></div>
+        <div class="frosted"></div>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <div class="trending-content text-center text-dark my-5 py-5">
+                        <h1>Trending Blends</h1>
+                        <h6 style="color: red;">Ever Growing Mix</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-3">
+                    <div class="card border-0  mb-3 square-card">
+                        <img class="card-img-top" src="./img/coffee bean.jpg" alt="Post Image">
+                        <div class="card-body">
+                            <h3 class="fs-5">Coffee Bean</h3> 
+                            <p class="small fw-light" style="color: red;">$40.00</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card border-0  mb-3 square-card">
+                        <img class="card-img-top" src="./img/dirty matcha.png" alt="Post Image">
+                        <div class="card-body">
+                            <h3 class="fs-5">Dirty Matcha</h3> 
+                            <p class="small fw-light" style="color: red;">$45.00</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card border-0  mb-3 square-card">
+                        <img class="card-img-top" src="./img/chocolate lava.png" alt="Post Image">
+                        <div class="card-body">
+                            <h3 class="fs-5">Chocolate Lava</h3> 
+                            <p class="small fw-light" style="color: red;">$35.00</p>
+                        </div>
+                    </div>
+                </div>
+               <div class="col-md-3">
+                    <div class="card border-0  mb-3 square-card">
+                        <img class="card-img-top" src="./img/chicken sandwich.jpg" alt="Post Image">
+                        <div class="card-body">
+                            <h3 class="fs-5">Chicken Sandwich</h3> 
+                            <p class="small fw-light" style="color: red;">$25.00</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 text-center m-auto">
+                        <a href="#" class="btn btn-sm btn-danger rounded-pill shadow-sm px-3">
+                            View more..
+                        </a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!Trending-->
+
+    <!--trending2
+    <section class="trending-post trending-transparent py-5">
+        <div class="bg-js"></div>
+        <div class="frosted"></div>
+        <div class="container py-5">
+            <h1 class="text-center mb-5">Our Latest Products</h1>
+            <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-4">
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="./img/coffee bean.jpg" class="card-img-top" alt="Product 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Product 1</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <a href="#" class="btn btn-primary">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="./img/dirty matcha.png" class="card-img-top" alt="Product 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Product 2</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <a href="#" class="btn btn-primary">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="./img/chocolate lava.png" class="card-img-top" alt="Product 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Product 3</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <a href="#" class="btn btn-primary">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="https://via.placeholder.com/500x200" class="card-img-top" alt="Product 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Product 3</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <a href="#" class="btn btn-primary">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>-->
+
+    <!--trending 3-->
+    <!-- https://bootstrapbrain.com/component/bootstrap-service-card-template-with-icon-title-and-description/#code -->
+    <section class="trending-post trending-transparent py-3 py-md-5 py-xl-8">
+        <div class="bg-js"></div>
+        <div class="frosted"></div>
+        <div class="container">
+            <div class="row justify-content-md-center">
+                <div class="col-12 col-md-10 col-lg-8 col-xl-7 col-xxl-6">
+                    <h2 class="mb-4 display-5 text-center">Our Trending Blends</h2>
+                    <p class="text-danger mb-5 text-center lead fs-4">We cater to our customer taste bud with our ever growing blends</p>
+                    <hr class="w-50 mx-auto mb-5 mb-xl-9 border-dark-subtle">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="container-fluid">
+                        <div class="row gy-3 gy-md-4">
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="card border-dark-subtle">
+                                    <div class="card-body text-center p-4 p-xxl-5">
+                                        <img src="./img2/matcha-tea.png" alt="matcha-coffee"  width="78" height="78">
+                                        <h4 class="mb-4">Dirty Match</h4>
+                                        <p class="mb-4  fw-bold" style="color:green;">Earthy goodness</p>
+                                        <a href="#" class="btn btn-outline-danger bsb-btn-circle" data-bs-toggle="modal" data-bs-target="#reviews-modal">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                                                <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="card border-dark-subtle">
+                                    <div class="card-body text-center p-4 p-xxl-5">
+                                        <img src="./img2/coffee-bag.png" alt="coffee-bag" width="78" height="78">
+                                        <h4 class="mb-4">Coffee Bean</h4>
+                                        <p class="mb-4  fw-bold" style="color:brown;">Roasted aroma</p>
+                                        <a href="#" class="btn btn-outline-danger bsb-btn-circle" data-bs-toggle="modal" data-bs-target="#reviews-modal">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                                                <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                                            </svg>
+                                        </a>    
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="card border-dark-subtle">
+                                    <div class="card-body text-center p-4 p-xxl-5">
+                                        <img src="./img2/bakery.png" alt="cake" width="78" height="78">
+                                        <h4 class="mb-4">Chocolate Lava</h4>
+                                        <p class="mb-4  fw-bold" style="color:chocolate;">Chocolate beauty</p>
+                                        <a href="#!" class="btn btn-outline-danger bsb-btn-circle" data-bs-toggle="modal" data-bs-target="#reviews-modal">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                                                <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="card border-dark-subtle">
+                                    <div class="card-body text-center p-4 p-xxl-5">
+                                        <img src="./img2/sandwich.png" alt="chicken-sandwich" width="78" height="78">
+                                        <h4 class="mb-4">Chicken Sandwich</h4>
+                                        <p class="mb-4  fw-bold" style="color:burlywood;">Delicious bite</p>
+                                        <a href="#!" class="btn btn-outline-danger bsb-btn-circle" data-bs-toggle="modal" data-bs-target="#reviews-modal">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                                                <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="card border-dark-subtle">
+                                    <div class="card-body text-center p-4 p-xxl-5">
+                                        <img src="./img2/Animation - 1738599713743.gif" alt="pistachio-latte" width="78" height="78">
+                                        <h4 class="mb-4">Pistachio Latte</h4>
+                                        <p class="mb-4  fw-bold" style="color:navajowhite;">Nutty mix</p>
+                                        <a href="#!" class="btn btn-outline-danger bsb-btn-circle" data-bs-toggle="modal" data-bs-target="#reviews-modal">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                                                <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="card border-dark-subtle">
+                                    <div class="card-body text-center p-4 p-xxl-5">
+                                        <img src="./img2/juice.png" alt="juice" width="78" height="78">
+                                        <h4 class="mb-4">Berry Blast</h4>
+                                        <p class="mb-4  fw-bold" style="color:blueviolet;">Wild berry</p>
+                                        <a href="#!" class="btn btn-outline-danger bsb-btn-circle" data-bs-toggle="modal" data-bs-target="#reviews-modal">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                                                <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--trending 3-->
+    
+    
+
+    <!--About Us-->
+    <section class="about-us py-5"><!--py will add padding top and bottom-->
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <div class="about-content text-center text-dark my-5 py-5">
+                        <h1>About Us</h1>
+                        <h6 class="text-danger">Our Warm Family</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-4">
+                <!--Profile Card 5-->
+                <div class="col-md-4 mt-4">
+                    <div class="card profile-card-5 bg-dark">
+                        <div class="card-img-block">
+                            <img class="card-img-top" src="./img/man-2969985_1280.jpg" alt="Card image cap">
+                        </div>
+                        <div class="card-body pt-0">
+                            <h5 class="card-title">Jame Vone</h5>
+                            <p class="card-text">I'm here for you if you ever have any problem</p>
+                        </div>
+                    </div>
+                    <p class="mt-3 w-100 float-left text-center"><strong>Manager</strong></p>
+                </div>
+                <div class="col-md-4 mt-4">
+                    <div class="card profile-card-5 bg-dark">
+                        <div class="card-img-block">
+                            <img class="card-img-top" src="./img/woman-8182795_1280.jpg" alt="Card image cap">
+                        </div>
+                        <div class="card-body pt-0">
+                            <h5 class="card-title">Nguyễn Thị Linh</h5>
+                            <p class="card-text">I'm here to create art while satisfying your taste bud</p>
+                        </div>
+                    </div>
+                    <p class="mt-3 w-100 float-left text-center"><strong>Barista</strong></p>
+                </div>
+                <div class="col-md-4 mt-4">
+                    <div class="card profile-card-5 bg-dark">
+                        <div class="card-img-block">
+                            <img class="card-img-top" src="./img/coffee-machine-5171445_1280.jpg" alt="Card image cap">
+                        </div>
+                        <div class="card-body pt-0">
+                            <h5 class="card-title">Joe Damion</h5>
+                            <p class="card-text">I'm sort of like a bartender but for coffee, I'm all ears and ready to serve</p>
+                        </div>
+                    </div>
+                    <p class="mt-3 w-100 float-left text-center"><strong>Counter staff</strong></p>
+                </div>
+                <!--Profile card 5-->
+            </div>
+        </div>
+    </section>
+    <!--About Us-->
+
+    <!--Sponsored by-->
+    <!-- 
+   PROGRESSIVELY ENHANCED
+   If a user has `prefers-reduced-motion: reduced`, there will be no animation
+   and the items will wrap, instead of being hidden.
+   If they have not opted for reduced motion, the items will be duplicated with JS
+   and the duplicated content will have `aria-hidden="true"` to prevent duplicate content
+   for screen readers.
+   If a user has JS disabled or it fails for whatever reason, they will get the same 
+   experience as a user with `prefers-reduced-motion: reduced`, so no content is hidden,
+   and there is no animation.
+   
+   === OPTIONS ===
+   CONTROL SPEED 
+   If you don't assign anything, it will use a default speed.
+   To change the speed, on the `.scroller`
+   you can use `data-speed="fast"` or `data-speed="slow"
+
+   CONTROL DIRECTION 
+   By default, it will scroll from right to left.
+   To change the direction, on the `.scroller`
+   you can use `data-direction="right"` (`data-direction="left" also works, but it is the default) 
+   -->
+
+    <h1 style="text-align: center">Our Generous Sponsors</h1>
+
+    <div class="scroller" data-speed="fast">
+        <ul class="tag-list scroller__inner">
+            <li>LakeShore</li>
+            <li>Coffee Panda</li>
+            <li>Barista Bean Lab</li>
+            <li>Juice Dudes</li>
+            <li>Real Fruit Power</li>
+            <li>Herbal Coffee</li>
+        </ul>
+    </div>
+
+    <div class="scroller" data-direction="right" data-speed="slow">
+        <div class="scroller__inner">
+            <img src="https://images.squarespace-cdn.com/content/v1/629d616906c4c610c4f85ec5/1f7028af-0a0d-4222-b6eb-bffddfea6302/Color+Logo+with+White+Cup%404x.png" alt="" width="150" height="150"/>
+            <img src="https://www.logoai.com/uploads/output/2025/08/20/bf17aa1de6c428f241b341c8ef2f778f.jpg" alt="" width="195" height="200"/>
+            <img src="https://images-platform.99static.com/i6X0pckPEXmgdqXpd2Wu-OyVYh4=/182x182:1646x1646/500x500/top/smart/99designs-contests-attachments/140/140908/attachment_140908470" alt="" width="150" height="150"/>
+            <img src="https://th.bing.com/th/id/R.b8dd3955a37e8f480479f3ffd0944716?rik=O2T96MXJWMHvPw&riu=http%3a%2f%2fimages-platform.99static.com%2f1wtYe05zncDNyVoW3s_T-ATbNZw%3d%2f55x61%3a1418x1424%2ffit-in%2f99designs-contests-attachments%2f90%2f90262%2fattachment_90262675&ehk=w8Ikp6yvtDPTPIp4%2fldTIdOULdRCzbK1Gyk2WQRn5BY%3d&risl=&pid=ImgRaw&r=0" alt="" width="150" height="150" />
+            <img src="https://5.imimg.com/data5/SELLER/Default/2021/8/NM/VN/ON/24006790/real-fruit-juice-1000x1000.jpg" alt="" width="150" height="150" />
+            <img src="https://www.logoai.com/uploads/output/2025/08/13/71a8f3579741ef3ac6e8c4011c687159.jpg" alt="" width="150" height="150"/>
+        </div>
+    </div>
+    <!--Sponsored by-->
+
+    <!--Menu-->
+    <section class="value py-5 mt-5">
+        <div class="container text-white py-5">
+            <div class="row py-5">
+                <div class="col-lg-6">
+                    <h1 class="font-weight-bold py-3">Unlock Your Body Potential With Our Coffee</h1>
+                    <h6>Warm Your Body, Warm Your Heart</h6>
+                    <a href="menu.html" class="btn btn-sm btn-danger rounded-pill shadow-sm px-3">
+                        Check Out Menu
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Menu-->
+
+    <!--Contact-->
+    <section class="contact py-5">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-lg-5 m-auto text-center">
+                    <h1>Contact Us</h1>
+                    <h6 style="color: red;">Always Be In Touch With Us</h6>
+                </div>
+            </div>
+            <div class="row py-5">
+               <div class="col-lg-9 m-auto">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <h6>LOCATION</h6>
+                            <p>123 Main Street Birmingham, AL 35203 United States</p>
+
+                            <h6>PHONE</h6>
+                            <p>(205) 555‑1234</p>
+
+                            <h6>EMAIL</h6>
+                            <p>joejohn@gmail.com</p>
+                        </div>
+                        <div class="col-lg-7">
+                            <div class="row">
+                                <div class="col-lg-6 mb-3 mb-lg-0">
+                                  <input type="text" class="form-control bg-light" placeholder="First Name">  
+                                </div>
+                                <div class="col-lg-6">
+                                  <input type="text" class="form-control bg-light" placeholder="Last Name">  
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-12 py-3">
+                                    <textarea name="" class="form-control bg-light" placeholder="" id="" cols="10" rows="5"></textarea>
+                                </div>
+                            </div>
+                            <button class="btn btn-sm btn-danger">Submit</button>
+                        </div>
+                    </div>
+               </div> 
+            </div>
+        </div>
+    </section>
+    <!--Contact-->
+
+    <!--footer-->
+    <section class="news py-5">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-lg-9 m-auto text-center">
+                    <h1>Join Our Mix Family</h1>
+                    <input type="text" class="px-3" placeholder="Enter Your Email">
+                    <button class="btn2">Submit</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-11 m-auto">
+                    <div class="row">
+                        <div class="col-lg-3 py-3">
+                            <h5 class="pb-3">CUSTOMER CARE</h5>
+                            <P>Regular</P>
+                            <p>On Time</p>
+                            <p>Always Care</p>
+                        </div>
+                        <div class="col-lg-3 py-3">
+                            <h5 class="pb-3">CUSTOMER CARE</h5>
+                            <P>Regular</P>
+                            <p>On Time</p>
+                            <p>Always Care</p>
+                        </div>
+                        <div class="col-lg-3 py-3">
+                            <h5 class="pb-3">CUSTOMER CARE</h5>
+                            <P>Regular</P>
+                            <p>On Time</p>
+                            <p>Always Care</p>
+                        </div>
+                        <div class="col-lg-3 py-3">
+                            <h5 class="pb-3">CUSTOMER CARE</h5>
+                            <span><i class="fab fa-facebook"></i></span>
+                            <span><i class="fab fa-instagram"></i></span>
+                            <span><i class="fab fa-twitter"></i></span>
+                            <span><i class="fab fa-google-plus"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <p class="text-center">Copyright ©2022 All rights reserved | This template is made with by Angelfav</p>
+        </div>
+    </section>
+    <!--footer-->
+
+
+    <!--Subscribe Modal-->
+    <div class="modal fade" id="subscribe-modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header text-bg-primary">
+                    <h5 class="modal-title">Subscribe for Newsletters</h5>
+                    <button
+                        class="btn-close btn-close-white"
+                        type="button"
+                        data-bs-dismiss="modal"
+                        aria-label="Close">
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="row gx-2">
+                            <div class="col-md-6">
+                                <div class="mb-2">
+                                    <input type="text" class="form-control form-control-sm" placeholder="First Name" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-2">
+                                    <input type="text" class="form-control form-control-sm" placeholder="Last Name" required>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="mb-2">
+                                    <input type="email" class="form-control form-control-sm" placeholder="Email" required>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="d-grid">
+                                    <button
+                                        type="submit"
+                                        class="btn btn-success btn-sm">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-check-fill" viewBox="0 0 16 16">
+                                            <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.026A2 2 0 0 0 2 14h6.256A4.5 4.5 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586zM16 4.697v4.974A4.5 4.5 0 0 0 12.5 8a4.5 4.5 0 0 0-1.965.45l-.338-.207z"/>
+                                            <path d="M16 12.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0m-1.993-1.679a.5.5 0 0 0-.686.172l-1.17 1.95-.547-.547a.5.5 0 0 0-.708.708l.774.773a.75.75 0 0 0 1.174-.144l1.335-2.226a.5.5 0 0 0-.172-.686"/>
+                                        </svg>
+                                        Subscribe
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Subscribe Modal-->
+
+    <!-- Reviews Modal -->
+    <div class="modal fade" id="reviews-modal" tabindex="-1" aria-labelledby="reviewsModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="reviewsModalLabel">Customer Reviews</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" style="max-height: 60vh; overflow-y: auto;">
+                    <p class="text-center mb-4">See what our customers are saying about Coffee Mix</p>
+
+                    <!-- Sample Reviews -->
+                    <div class="review-card mb-4 p-3 border rounded">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="me-3">
+                                <i class="fas fa-user-circle fa-3x text-secondary"></i>
+                            </div>
+                            <div>
+                                <h5 class="mb-1">John Doe</h5>
+                                <div class="stars">
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p>"Amazing coffee blends! The Dirty Matcha is my absolute favorite. Highly recommend this place."</p>
+                        <small class="text-muted">Posted on December 15, 2025</small>
+                    </div>
+
+                    <div class="review-card mb-4 p-3 border rounded">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="me-3">
+                                <i class="fas fa-user-circle fa-3x text-secondary"></i>
+                            </div>
+                            <div>
+                                <h5 class="mb-1">Jane Smith</h5>
+                                <div class="stars">
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="far fa-star text-warning"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p>"Great atmosphere and friendly staff. The juices are fresh and delicious. Will definitely come back!"</p>
+                        <small class="text-muted">Posted on December 10, 2025</small>
+                    </div>
+
+                    <div class="review-card mb-4 p-3 border rounded">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="me-3">
+                                <i class="fas fa-user-circle fa-3x text-secondary"></i>
+                            </div>
+                            <div>
+                                <h5 class="mb-1">Mike Johnson</h5>
+                                <div class="stars">
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p>"Best coffee shop in town! The desserts are incredible and the coffee is always perfect."</p>
+                        <small class="text-muted">Posted on December 5, 2025</small>
+                    </div>
+
+                    <!-- Button to Submit Review -->
+                    <div class="text-center mt-4">
+                        <button type="button" class="btn btn-danger btn-lg" data-bs-toggle="modal" data-bs-target="#review-modal" data-bs-dismiss="modal">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-pencil-square me-2" viewBox="0 0 16 16">
+                                <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
+                                <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 0-.5-.5H.5a.5.5 0 0 0 0 1h.5A1.5 1.5 0 0 0 2.5 3H3v.5a.5.5 0 0 0 1 0V3h.5a.5.5 0 0 0 0-1H3.5A1.5 1.5 0 0 0 2 2.5V3H.5a.5.5 0 0 0 0 1H1v.5a.5.5 0 0 0 1 0V4h.5a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5V13.5z"/>
+                            </svg>
+                            Write Your Review
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Reviews Modal -->
+
+    <!-- Review Modal -->
+    <div class="modal fade" id="review-modal" tabindex="-1" aria-labelledby="reviewModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="reviewModalLabel">Submit Your Review</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="review-form">
+                        <div class="mb-3">
+                            <label for="reviewText" class="form-label">Your Review</label>
+                            <textarea class="form-control" id="reviewText" rows="3" required></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Rating</label>
+                            <div id="stars">
+                                <i class="fas fa-star" data-star="1"></i>
+                                <i class="fas fa-star" data-star="2"></i>
+                                <i class="fas fa-star" data-star="3"></i>
+                                <i class="fas fa-star" data-star="4"></i>
+                                <i class="fas fa-star" data-star="5"></i>
+                            </div>
+                            <input type="range" class="form-range" min="1" max="5" id="rating" value="1" style="width: 100%;">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit Review</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Review Modal -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        //background js for trending3
+        const images = [
+            './Orange and Navy Blue Simple Illustrative Coffee Product Presentation/1.jpg',
+            './Orange and Navy Blue Simple Illustrative Coffee Product Presentation/2.jpg',
+            './Orange and Navy Blue Simple Illustrative Coffee Product Presentation/3.jpg',
+            './Orange and Navy Blue Simple Illustrative Coffee Product Presentation/4.jpg',
+            './Orange and Navy Blue Simple Illustrative Coffee Product Presentation/5.jpg',
+        ];
+
+        let current = 0;
+        const bgDiv = document.querySelector('.bg-js');
+
+        function showNextBg() {
+            bgDiv.style.backgroundImage = `url('${images[current]}')`;
+            current = (current + 1) % images.length;
+        }
+
+        showNextBg();
+        setInterval(showNextBg, 4000); // Change every 4 seconds
+
+
+        //sponsor by
+
+        const scrollers = document.querySelectorAll(".scroller");
+
+        // If a user hasn't opted in for recuded motion, then we add the animation
+        if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+            addAnimation();
+        }
+
+        function addAnimation() {
+            scrollers.forEach((scroller) => {
+                // add data-animated="true" to every `.scroller` on the page
+                scroller.setAttribute("data-animated", true);
+
+                // Make an array from the elements within `.scroller-inner`
+                const scrollerInner = scroller.querySelector(".scroller__inner");
+                const scrollerContent = Array.from(scrollerInner.children);
+
+                // For each item in the array, clone it
+                // add aria-hidden to it
+                // add it into the `.scroller-inner`
+                scrollerContent.forEach((item) => {
+                    const duplicatedItem = item.cloneNode(true);
+                    duplicatedItem.setAttribute("aria-hidden", true);
+                    scrollerInner.appendChild(duplicatedItem);
+                });
+            });
+        }
+
+        //review modal
+        // Connect range slider to stars
+        document.getElementById('rating').addEventListener('input', function() {
+            const value = parseInt(this.value);
+            const stars = document.querySelectorAll('#stars .fa-star');
+            stars.forEach((star, index) => {
+                if (index < value) {
+                    star.classList.add('text-warning'); // Color the star yellow
+                } else {
+                    star.classList.remove('text-warning'); // Remove color for stars beyond the value
+                }
+            });
+        });
+
+        // Initialize stars on modal open (ensure first star is colored initially)
+        document.getElementById('review-modal').addEventListener('shown.bs.modal', function() {
+            document.getElementById('rating').dispatchEvent(new Event('input')); // Trigger initial update
+        });
+
+        // Handle review form submission
+        document.getElementById('review-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form data
+            const reviewText = document.getElementById('reviewText').value;
+            const rating = document.getElementById('rating').value;
+            
+            // Create new review element
+            const reviewCard = document.createElement('div');
+            reviewCard.className = 'review-card mb-4 p-3 border rounded';
+            reviewCard.innerHTML = `
+                <div class="d-flex align-items-center mb-3">
+                    <div class="me-3">
+                        <i class="fas fa-user-circle fa-3x text-secondary"></i>
+                    </div>
+                    <div>
+                        <h5 class="mb-1">You</h5>
+                        <div class="stars">
+                            ${'<i class="fas fa-star text-warning"></i>'.repeat(rating)}${'<i class="far fa-star text-warning"></i>'.repeat(5-rating)}
+                        </div>
+                    </div>
+                </div>
+                <p>"${reviewText}"</p>
+                <small class="text-muted">Posted just now</small>
+            `;
+            
+            // Add to reviews modal
+            const reviewsBody = document.querySelector('#reviews-modal .modal-body');
+            const firstReview = reviewsBody.querySelector('.review-card');
+            reviewsBody.insertBefore(reviewCard, firstReview);
+            
+            // Reset form
+            document.getElementById('reviewText').value = '';
+            document.getElementById('rating').value = 1;
+            document.getElementById('rating').dispatchEvent(new Event('input'));
+            
+            // Close submit modal and open reviews modal
+            const submitModal = bootstrap.Modal.getInstance(document.getElementById('review-modal'));
+            submitModal.hide();
+            
+            const reviewsModal = new bootstrap.Modal(document.getElementById('reviews-modal'));
+            reviewsModal.show();
+            
+            alert('Thank you for your review! It has been added.');
+        });
+
+        // Search functionality
+        const menuItems = [
+            'Dirty Matcha', 'Ube-Latte', 'Dirty Horchata', 'Affogato', 'Cold Brew Tonic', 'Iced Brown',
+            'Purple Fruit', 'Papaya-Juice', 'Green Basil', 'Citrus Mood', 'Melon Love', 'Nutty Mix',
+            'Double Patty', 'Cocktail-sour', 'Chocolate Raspberry', 'Chicken Sandwich', 'IceCream-Sundea', 'Donut-Set'
+        ];
+
+        const searchInput = document.getElementById('search-input');
+        const suggestionsDiv = document.getElementById('search-suggestions');
+
+        searchInput.addEventListener('input', function() {
+            const query = this.value.toLowerCase().trim();
+            suggestionsDiv.innerHTML = '';
+            
+            if (query.length === 0) {
+                suggestionsDiv.style.display = 'none';
+                return;
+            }
+            
+            const matches = menuItems.filter(item => item.toLowerCase().includes(query));
+            
+            if (matches.length > 0) {
+                matches.forEach(item => {
+                    const suggestion = document.createElement('div');
+                    suggestion.className = 'p-2 border-bottom cursor-pointer';
+                    suggestion.style.cursor = 'pointer';
+                    suggestion.textContent = item;
+                    suggestion.addEventListener('click', () => {
+                        // Navigate to menu page
+                        window.location.href = 'menu.html';
+                    });
+                    suggestionsDiv.appendChild(suggestion);
+                });
+                suggestionsDiv.style.display = 'block';
+            } else {
+                suggestionsDiv.style.display = 'none';
+            }
+        });
+
+        // Hide suggestions when clicking outside
+        document.addEventListener('click', function(e) {
+            if (!searchInput.contains(e.target) && !suggestionsDiv.contains(e.target)) {
+                suggestionsDiv.style.display = 'none';
+            }
+        });
+
+    </script>
+</body>
+</html>

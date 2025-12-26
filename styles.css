@@ -1,0 +1,1141 @@
+
+.brand-gradient {
+  background: #6F4E37;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Lobster", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+}
+
+.customize-nav {
+    backdrop-filter: blur(8px);
+}
+
+.banner-holder{
+    background-image: url(./img/Black\ Bold\ Grunge\ Coffee\ Video.gif);
+    background-size: cover;
+    background-position: 50% 50%;
+    height: 100vh;
+    width: 100%
+}
+
+.card:hover {
+  box-shadow: -2px -1px 25px -4px rgba(0,0,0,0.75);
+  -webkit-box-shadow: -2px -1px 25px -4px rgba(0,0,0,0.75);
+  -moz-box-shadow: -2px -1px 25px -4px rgba(0,0,0,0.75);
+  transition: 0.5s;
+}
+
+/*
+.trending-transparent {
+    /*background: rgba(255,255,255,0.3); white, 30% opaque 
+    /* Or use another color, e.g. coffee brown: 
+    background: rgba(111, 78, 55, 0.2);
+    backdrop-filter: blur(8px); /* Optional: frosted glass effect 
+}
+*/
+
+.trending-transparent {
+    position: relative;
+    overflow: hidden;
+    min-height: 400px; /* Adjust as needed */
+}
+
+.bg-js {
+    position: absolute;
+    inset: 0;
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 0;
+    transition: background-image 1s ease;
+}
+
+.frosted {
+    position: absolute;
+    inset: 0;
+    background: rgba(255,255,255,0.2);
+    backdrop-filter: blur(4px);
+    z-index: 1;
+    pointer-events: none;
+}
+
+.trending-transparent > .container {
+    position: relative;
+    z-index: 2;
+}
+
+
+/* trending2 card
+.card {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+*/
+/*Trending square
+.square-card {
+    width: 18vw;         /* Adjust as needed for your layout 
+    height: 18vw;
+    aspect-ratio: 1 / 1; /* Ensures square shape 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden;
+    margin: 0 auto;      /* Center in column 
+    min-width: 180px;    /* Optional: minimum size for small screens 
+    max-width: 260px;    /* Optional: maximum size 
+}
+
+.square-card .card-img-top {
+    width: 100%;
+    height: 60%;
+    object-fit: scale-down ;
+}
+.square-card .card-body {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+@media (max-width: 600px) {
+    .square-card {
+        width: 80vw;
+        height: 80vw;
+        min-width: 0;
+        max-width: none;
+    }
+}*/
+
+/*Profile Card 5*/
+.profile-card-5 {
+   margin-top: 20px;
+}
+
+.profile-card-5 .btn {
+   border-radius: 2px;
+   text-transform: uppercase;
+   font-size: 12px;
+   padding: 7px 20px;
+}
+
+.profile-card-5 .card-img-block {
+   width: 91%;
+   margin: 0 auto;
+   position: relative;
+   top: -20px;
+}
+
+.profile-card-5 .card-img-block img {
+   border-radius: 5px;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.63);
+}
+
+.profile-card-5 h5 {
+   color: white;
+   font-weight: 600;
+}
+
+.profile-card-5 p {
+   color: white;
+   font-size: 14px;
+   font-weight: 300;
+}
+
+/*
+.profile-card-5 .btn-primary {
+   background-color: #4e5e30;
+   border-color: #4e5e30;
+}
+*/
+
+/*sponsored by*/
+
+.scroller {
+  max-width: 700px;
+  margin-inline: auto; /* centers the container */
+  overflow: hidden;
+  -webkit-mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+  mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+}
+
+.scroller__inner {
+  padding-block: 1rem;
+  display: flex;
+  flex-wrap: nowrap;
+  width: max-content;
+  animation: scroll var(--_animation-duration, 40s) var(--_animation-direction, forwards) linear infinite;
+  align-items: center;
+  /*flex-wrap: wrap;*/
+  gap: 1rem;
+}
+
+.scroller[data-animated="true"] {
+  overflow: hidden;
+  -webkit-mask: linear-gradient(
+    90deg,
+    transparent,
+    white 20%,
+    white 80%,
+    transparent
+  );
+  mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+  
+}
+
+.scroller[data-animated="true"] .scroller__inner {
+  width: max-content;
+  flex-wrap: nowrap;
+  animation: scroll var(--_animation-duration, 40s)
+    var(--_animation-direction, forwards) linear infinite;
+}
+
+.scroller[data-direction="right"] {
+  --_animation-direction: reverse;
+}
+
+.scroller[data-direction="left"] {
+  --_animation-direction: forwards;
+}
+
+.scroller[data-speed="fast"] {
+  --_animation-duration: 20s;
+}
+
+.scroller[data-speed="slow"] {
+  --_animation-duration: 60s;
+}
+
+@keyframes scroll {
+  to {
+    transform: translate(calc(-50% - 0.5rem));
+  }
+}
+
+/* general styles */
+
+:root {
+  --clr-neutral-100: hsl(0, 0%, 100%);
+  --clr-primary-100: hsl(205, 15%, 58%);
+  --clr-primary-400: hsl(215, 25%, 27%);
+  --clr-primary-800: hsl(217, 33%, 17%);
+  --clr-primary-900: hsl(218, 33%, 9%);
+}
+
+/*html {
+  color-scheme: dark;
+}
+
+body {
+  display: grid;
+  min-block-size: 100vh;
+  place-content: center;
+  font-family: system-ui;
+  font-size: 1.125rem;
+  background-color: var(--clr-primary-800);
+}*/
+
+.tag-list {
+  margin: 0;
+  padding-inline: 0;
+  list-style: none;
+}
+
+.tag-list li {
+  padding: 1rem;
+  /*background: var(--clr-primary-400);*/
+  border-radius: 0.5rem;
+  box-shadow: 0 0.5rem 1rem -0.25rem var(--clr-primary-900);
+}
+
+/* for testing purposed to ensure the animation lined up correctly */
+.test {
+  background: red !important;
+}
+
+.value {
+  background:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(./img/coffee.jpg)no-repeat;
+  background-size: cover;
+  height: 80vh;
+  width: 100%;
+}
+
+
+/*footer*/
+.news {
+    background-color: black;
+    color: white;
+}
+
+.btn2 {
+    height: 45px;
+    width: 100px;
+    background: white;
+    margin-left: -10px;
+    border: 2px solid white;
+    font-weight: 600;
+}
+.news input {
+    height: 45px;
+    width: 35%;
+    border: 2px solid white;
+    outline: none;
+    background: black;
+    color: white;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.news::placeholder {
+    color: white;
+}
+
+.news p {
+    margin: 0;
+}
+
+.fab {
+    font-size: 2.5rem;
+    cursor: pointer;
+    padding-right: 5px;
+}
+
+
+/*menu
+.rounded-section {
+  border: 1px solid #ccc;
+  border-radius: 100px; /* Adjust the value as needed 
+  padding: 20px;
+  margin: 20px;
+  background-color: #fff; /* Optional: for contrast 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: adds depth 
+}*/
+
+
+/*menu-banner*/
+
+.menu-banner-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 0 1rem; /* space on sides for small screens */
+}
+
+.menu-banner-box {
+  background-image: url(./img2/Untitled\ design\ \(1\).png);
+  background-size: cover;
+  max-width: 800px;
+  width: 100%;
+  height: 80vh;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05); /* optional soft shadow */
+}
+/*
+.menu-banner {
+  background-image: url(./img2/Untitled\ design\ \(1\).png);
+  border-radius: 100px;
+  border: 1px solid #ccc;
+  border-radius: 100px; /* Adjust the value as needed 
+  background-size: cover;
+  background-position: 50% 50%;
+  height: 100vh;
+  width: 100%
+}*/
+
+/*message*/
+
+.message-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 0 1rem; /* space on sides for small screens */
+}
+
+.message-box {
+  max-width: 1000px;
+  width: 100%;
+  min-height: 60vh;
+  max-height: 100vh;
+  overflow-y: auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05); /* optional soft shadow */
+  padding: 2rem;
+  border-radius: 0.5rem;
+  border: 1px solid #dee2e6;
+}
+
+/*menu-head link*/
+.menu-head a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/*menu-item for scroll*/
+
+.scrollable-col {
+  height: 300px;           /* keep or remove if set inline */
+  overflow-y: auto;        /* keep scrolling enabled */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none;    /* Firefox */
+}
+.scrollable-col::-webkit-scrollbar {
+  display: none;           /* Chrome, Safari, Opera */
+}
+
+
+/* Ensure buttons and quantity wrap on small screens */
+.quantity-controls {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Responsive tweaks for mobile */
+@media (max-width: 480px) {
+  .bsb-btn-circle {
+    width: 32px;
+    height: 32px;
+    padding: 4px;
+    font-size: 14px;
+  }
+
+  .quantity {
+    font-size: 14px;
+    min-width: 24px;
+    text-align: center;
+  }
+
+  .quantity-controls {
+    gap: 6px;
+    justify-content: center;
+  }
+
+  .card-body {
+    padding: 1rem;
+  }
+}
+
+/*cart item design*/
+
+:root {
+  /* Warm latte cream */
+  --latte-cream: rgba(253, 248, 243, 0.95); 
+
+  /* Espresso brown */
+  --espresso: rgba(60, 40, 30, 1);
+
+  /* Cappuccino beige */
+  --cappuccino: rgba(198, 156, 109, 0.9);
+
+  /* Mocha chocolate */
+  --mocha: rgba(111, 78, 55, 1);
+
+  /* Matcha green accent */
+  --matcha: rgba(139, 174, 118, 0.85);
+
+  /* Caramel highlight */
+  --caramel: rgba(205, 133, 63, 0.9);
+
+  /* Foam white */
+  --foam: rgba(255, 255, 255, 0.95);
+}
+
+
+.cart-item{
+  background: var(--latte-cream); /* soft background */
+  color: var(--espresso);
+  position: fixed;
+  top: 0;
+  right: -500px; /* hidden off-screen initially */
+  bottom: 0;
+  width: 25rem;
+  padding-block: 2rem;
+  display: flex;
+  flex-direction: column;
+  z-index: 9999; /* ensure it shows above everything */
+  box-shadow: -10px -10px 20px rgba(0, 0, 0, 0.1);
+  justify-content: center;
+  align-items: center;
+}
+
+.cart-item-active{
+  right: 0; /* slide in */
+  transition: right 0.3s ease-in-out;
+}
+
+.cart-items-list{
+  flex: 1;
+  width: 100%;
+  margin-top: 1.5rem ;
+  overflow: auto;
+}
+
+.cart-items-list::-webkit-scrollbar {
+  width: 1;
+}
+
+.cart-total{
+  width: 100%;
+  background: var(--cappuccino);
+  text-align: center;
+  margin-block: 1rem;
+  padding-block: 1rem;
+}
+
+.cart-total span{
+  display: inline;
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+
+/*
+.btn-container .bsb-btn-circle{
+  background: var(--mocha);
+  border: none;
+  transition: background 0.3s, color 0.3s;
+}
+
+.btn-container .bsb-btn-circle:hover{
+  background: var(--matcha);
+  color: var(--foam);
+}*/
+
+.cart-items-list .item:nth-child(even){
+  background: var(--foam);
+}
+
+.pickup {
+  display: flex;
+  gap: 10px;
+  margin: 10px 0;
+}
+.pickup label {
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+.pickup input[type="radio"] {
+  display: none;
+}
+.pickup input[type="radio"]:checked + label {
+  background-color: #581845;
+  color: white;
+  border-color: #581845;
+}
+
+.item{
+  display: flex;
+  align-items: center;
+  gap: .1rem;
+  padding: .7rem 1rem;
+}
+
+.item .item-image img{
+  width: 5rem;
+}
+
+.item h4{
+  font-size: 1.3rem;
+  color: var(--caramel);
+}
+
+.item .item-price{
+  font-weight: 400;
+  margin-top: .3rem;
+}
+
+.quantity-btn{
+  background: var(--mocha);
+  color: var(--foam);
+  width: 1.7rem;
+  aspect-ratio: 1;
+  border-radius: 100vw;
+  text-align: center;
+  line-height: 1.7rem;
+}
+
+.quantity-value{
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-inline: .6rem;
+}
+
+
+/*menu heading design*/
+
+.menu-name{
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.menu-head{
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.message-heading{
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.message-sub_heading{
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.footer-heading{
+  font-family: "Lobster", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/*store header items*/
+.store-header{
+ background-color: #fdffff;
+  background-image: 
+    radial-gradient(at 47% 33%, hsl(255.52, 44%, 74%) 0, transparent 59%), 
+    radial-gradient(at 82% 65%, hsl(298.24, 33%, 41%) 0, transparent 55%);
+}
+
+/*grid for store header items*/
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr minmax(0, 1000px) 1fr; /* center column constrains & centers content */
+  grid-auto-rows: auto;
+  gap: 1rem;
+  align-items: start;
+}
+
+/* header bar stretches full width */
+.item-1 {
+  grid-column: 1 / -1; /* span from start to end */
+  /*background-color: lightblue;*/
+  border-radius: 0.8rem;
+  padding: 1rem 1.5rem;
+  height: 50px;        /* header height - adjust as needed */
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* change to center to center text in header */
+}
+
+/* centered banner under the item-1*/
+.item-2 {
+  grid-column: 2 / 3;   /* place in center track */
+  justify-self: center; /* center inside the center track */
+  align-self: start;
+  width: 90%;           /* relative size inside center column */
+  max-width: 1000px;     /* limit max width */
+  height: auto;        /* fixed banner height */
+  border-radius: 2rem;
+  padding: 0;/* remove padding so the image reaches the rounded corners */
+  margin-top: 1rem;   /* spacing below header */
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /*background: #fff; optional fallback */
+   backdrop-filter: blur(17px) saturate(154%);
+    -webkit-backdrop-filter: blur(17px) saturate(154%);
+    background-color: rgba(166, 105, 51, 0.28);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* subtle shadow */
+}
+
+.item-2 .banner-img {
+  display: block;
+  width: 100%;
+  height:400px;          /* fixed height so object-fit works predictably */
+  object-fit: cover;     /* fills and crops (change to 'contain' to show all) */
+  border-radius: 2rem;
+  filter: brightness(0.8) contrast(1.1);
+}
+
+
+/*icon button*/
+.icon-btn {
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: inherit; /* make the image follow the container radius */
+}
+
+
+
+/* Responsive adjustments for tablets and phones */
+@media (max-width: 1024px) { /* Tablet */
+  .grid-container {
+    grid-template-columns: 1fr; /* Stack items vertically */
+  }
+
+  .item-1 {
+    height: 60px; /* Adjust header height for smaller screens */
+    padding: 0.5rem; /* Reduce padding */
+  }
+
+  .item-2 {
+    width: 90%; /* Increase width for smaller screens */
+    margin-top: 1rem; /* Add space below the header */
+  }
+  .item-2 .banner-img {
+    height: auto; /* Allow image height to adjust */
+    max-height: 350px; /* Larger on tablets than mobile */
+  
+  }
+}
+
+@media (max-width: 600px) { /* Mobile */
+  .item-1 {
+    height: 50px; /* Further adjust header height */
+    padding: 0.5rem; /* Reduce padding */
+  }
+
+  .item-2 {
+    width: 95%; /* Full width on mobile */
+    margin-top: 1rem; /* Add more space below the header */
+  }
+
+  .item-2 .banner-img {
+    height: auto; /* Allow image height to adjust */
+    max-height: 250px; /* Increase from 200px to give more breathing room */
+    
+  }
+
+  .icon-btn {
+    width: 36px; /* Smaller icon button */
+    height: 36px; /* Smaller icon button */
+  }
+}
+
+.store-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  justify-content: center;
+  width: 100%;
+  max-width: 1000px;
+  gap: 1rem;
+  margin: 0 auto;
+}
+.store-Item {
+  display: flex;
+  flex-direction: column;
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.store-Item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.store-Item p {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+  color: #333;
+  align-items: center;
+  display: inline-flex;
+}
+
+.store-Item p span img {
+  width: 24px;
+  height: 24px;
+  margin-right: 0.5rem;
+}
+
+.store-contact{
+  background: url(./img3/d20ea742-6d49-4b87-91e6-77205967f768.jpg);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.store-form{
+  backdrop-filter: blur(14px) saturate(141%);
+    -webkit-backdrop-filter: blur(14px) saturate(141%);
+    background-color: rgba(255, 255, 255, 0.57);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+.store-footer{
+  backdrop-filter: blur(19px) saturate(137%);
+  -webkit-backdrop-filter: blur(19px) saturate(137%);
+  background-color: rgba(0, 3, 5, 0.84);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+/*checkout form design*/
+
+
+.checkout-page .card-form {
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.checkout-page .card-form h5 {
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+
+.checkout-page .card-form label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+.checkout-page .card-form input[type="text"],
+.checkout-page .card-form input[type="tel"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 0px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 0 rgba(0,0,0,0.1);
+  /*box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  box-shadow: 0 3px 0 rgba(0,0,0,0.15);
+  box-shadow: 0 6px 8px rgba(0,0,0,0.2);
+  box-shadow: inset 0 -3px 5px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 6px rgba(0, 123, 255, 0.3);*/
+}
+
+/* On focus: stronger bottom shadow */
+.checkout-page .card-form input[type="text"]:focus,
+.checkout-page .card-form input[type="tel"]:focus {
+  outline: none; /* remove default blue outline */
+  box-shadow: 0 4px 6px rgba(0,0,0,0.25);
+  /*box-shadow: 0 4px 6px rgba(0, 123, 255, 0.4); /* blue glow */
+}
+
+.checkout-page .row {
+  display: flex;
+  gap: 10px;
+}
+
+.checkout-page .col-md-6 {
+  flex: 1;
+}
+
+.checkout-page .checkbox-container {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+
+.checkbox-container input {
+  margin-right: 10px;
+}
+
+/*
+.card-form button {
+  margin-top: 20px;
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.card-form button:hover {
+  background-color: #0056b3;
+}*/
+
+
+.checkout-page #card-details {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 0.6s cubic-bezier(0.68, -0.55, 0.27, 1.55),
+    opacity 0.4s ease;
+}
+
+/* When visible */
+.checkout-page #card-details.show {
+  max-height: 500px; /* enough space for inputs */
+  opacity: 1;
+}
+
+/* customer detail */
+.checkout-page .card-customerform {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: inset 0 -3px 5px rgba(0,0,0,0.2);
+}
+
+.checkout-page .card-customerform h5 {
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+
+.checkout-page .card-customerform input[type="text"],
+.checkout-page .card-customerform input[type="email"],
+.checkout-page .card-customerform input[type="tel"],
+.checkout-page .card-customerform textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 0px solid #ccc;   /* use 1px so the border is visible */
+  border-radius: 5px;
+  box-shadow: 0 6px 8px rgba(0,0,0,0.2);
+  resize: vertical;         /* allow vertical resizing only */
+}
+
+.checkout-page .card-customerform input[type="text"]:focus,
+.checkout-page .card-customerform input[type="email"]:focus,
+.checkout-page .card-customerform input[type="tel"]:focus,
+.checkout-page .card-customerform textarea:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 6px rgba(0, 123, 255, 0.5);
+  outline: none;
+}
+
+/* Make all placeholders muted */
+.checkout-page input::placeholder,
+.checkout-page textarea::placeholder {
+  color: #6c757d;   /* muted gray */
+  opacity: 1;       /* ensure visible */
+  font-style: italic; /* optional */
+}
+
+/* Hide placeholder when input is focused */
+.checkout-page input:focus::placeholder,
+.checkout-page textarea:focus::placeholder {
+  color: transparent;
+}
+
+
+
+/*order summary*/
+.checkout-page .card-ordersummary {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 123, 255, 0.3);
+}
+
+.checkout-page .card-ordersummary h5 {
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+
+.checkout-banner-title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: "Montserrat Alternates", sans-serif;
+  color:  #6a11cb;
+}
+
+.checkout-section {
+  margin-top: 100px; /* push content down so it's not hidden behind the bar */
+}
+.checkout-section h3 {
+  margin-bottom: 20px;
+  font-family: "Montserrat Alternates", sans-serif;
+  color: #333;
+}
+
+/*checkout steps form design*/
+.checkout-page .checkout-progress {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  padding: 20px;
+  border-radius: 10px; 
+  font-family: 'Segoe UI', sans-serif;
+  color: white;
+
+  position: sticky;  /* stick only when scrolling */
+  top: 0;            /* stick to top of viewport */
+  z-index: 1000;     /* stay above other content */}
+
+.checkout-page .step {
+  flex: 1;
+  text-align: center;
+  position: relative;
+}
+
+.step:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  top: 16px;
+  right: -50%;
+  width: 100%;
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.4);
+  z-index: 0;
+}
+
+.checkout-page .circle {
+  background-color: white;
+  color: transparent; /* empty until completed */
+  font-weight: bold;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 8px;
+  z-index: 1;
+}
+
+.checkout-page .step.completed .circle {
+  background-color: #9b59b6;
+  color: white;
+}
+
+.checkout-page .label {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* checkout banner image*/
+.checkout-page .card-checkoutbanner {
+  max-width: 800px;
+  height: 300px;
+  width: 300px;
+  margin: auto;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 123, 255, 0.3);
+}
+
+/*checkout nav*/
+.checkout-page .checkout-navbar {
+  background-color: #581845;
+  padding: 10px 20px;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.checkout-backbtn i {
+  font-size: 20px;
+  color: #6a11cb; /* purple arrow to match your theme */
+}
+
+.checkout-title h5 {
+  font-weight: bold;
+  color: #333;
+}
+
+/*save card checkbox*/
+/* Container */
+.checkbox-container {
+  display: inline-block;
+  position: relative;
+  padding-left: 30px; /* space for the checkmark */
+  cursor: pointer;
+  font-size: 16px;
+  user-select: none;
+}
+
+/* Hide the default checkbox */
+.checkbox-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Custom checkmark box */
+.checkbox-container .checkmark {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #eee;
+  border-radius: 4px;
+}
+
+/* On hover */
+.checkbox-container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When checked */
+.checkbox-container input:checked ~ .checkmark {
+  background-color: #581845; /* your theme color */
+}
+
+/* Add the tick */
+.checkbox-container .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.checkbox-container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.checkbox-container .checkmark:after {
+  left: 7px;
+  top: 3px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+
+
+
+/*the .checkout-page i add to to specify this designs for checkout page so that anyother page that has similar styles/names doesn't get affected*/
+
+/* End of checkout form design */
+
+
+
+
+
