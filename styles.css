@@ -15,13 +15,26 @@
     backdrop-filter: blur(8px);
 }
 
+
 .banner-holder{
     background-image: url(./img/Black\ Bold\ Grunge\ Coffee\ Video.gif);
     background-size: cover;
     background-position: 50% 50%;
     height: 100vh;
-    width: 100%
+    width: 100%;
 }
+
+/* Mobile view (screens up to 768px wide) */
+ @media (max-width: 768px) { 
+  .banner-holder { 
+    background-image: url(./img/BlackBoldGrungeCoffeeVideo-ezgif.com-gif-to-webp-converter.webp); /* your mobile-friendly image */ 
+    background-size: cover; /* still fills the screen */ 
+    background-position: center; 
+    height: 100vh; /* full viewport height */ 
+    width: 100%; /* full viewport width */ 
+  } 
+}
+
 
 .card:hover {
   box-shadow: -2px -1px 25px -4px rgba(0,0,0,0.75);
@@ -30,14 +43,6 @@
   transition: 0.5s;
 }
 
-/*
-.trending-transparent {
-    /*background: rgba(255,255,255,0.3); white, 30% opaque 
-    /* Or use another color, e.g. coffee brown: 
-    background: rgba(111, 78, 55, 0.2);
-    backdrop-filter: blur(8px); /* Optional: frosted glass effect 
-}
-*/
 
 .trending-transparent {
     position: relative;
@@ -69,58 +74,6 @@
     z-index: 2;
 }
 
-
-/* trending2 card
-.card {
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
-}
-
-.card-img-top {
-    height: 200px;
-    object-fit: cover;
-}
-*/
-/*Trending square
-.square-card {
-    width: 18vw;         /* Adjust as needed for your layout 
-    height: 18vw;
-    aspect-ratio: 1 / 1; /* Ensures square shape 
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    overflow: hidden;
-    margin: 0 auto;      /* Center in column 
-    min-width: 180px;    /* Optional: minimum size for small screens 
-    max-width: 260px;    /* Optional: maximum size 
-}
-
-.square-card .card-img-top {
-    width: 100%;
-    height: 60%;
-    object-fit: scale-down ;
-}
-.square-card .card-body {
-    width: 100%;
-    height: 40%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-@media (max-width: 600px) {
-    .square-card {
-        width: 80vw;
-        height: 80vw;
-        min-width: 0;
-        max-width: none;
-    }
-}*/
 
 /*Profile Card 5*/
 .profile-card-5 {
@@ -157,12 +110,7 @@
    font-weight: 300;
 }
 
-/*
-.profile-card-5 .btn-primary {
-   background-color: #4e5e30;
-   border-color: #4e5e30;
-}
-*/
+
 
 /*sponsored by*/
 
@@ -237,18 +185,6 @@
   --clr-primary-900: hsl(218, 33%, 9%);
 }
 
-/*html {
-  color-scheme: dark;
-}
-
-body {
-  display: grid;
-  min-block-size: 100vh;
-  place-content: center;
-  font-family: system-ui;
-  font-size: 1.125rem;
-  background-color: var(--clr-primary-800);
-}*/
 
 .tag-list {
   margin: 0;
@@ -316,16 +252,6 @@ body {
 }
 
 
-/*menu
-.rounded-section {
-  border: 1px solid #ccc;
-  border-radius: 100px; /* Adjust the value as needed 
-  padding: 20px;
-  margin: 20px;
-  background-color: #fff; /* Optional: for contrast 
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: adds depth 
-}*/
-
 
 /*menu-banner*/
 
@@ -343,17 +269,6 @@ body {
   height: 80vh;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.05); /* optional soft shadow */
 }
-/*
-.menu-banner {
-  background-image: url(./img2/Untitled\ design\ \(1\).png);
-  border-radius: 100px;
-  border: 1px solid #ccc;
-  border-radius: 100px; /* Adjust the value as needed 
-  background-size: cover;
-  background-position: 50% 50%;
-  height: 100vh;
-  width: 100%
-}*/
 
 /*message*/
 
@@ -498,17 +413,7 @@ body {
   font-weight: 400;
 }
 
-/*
-.btn-container .bsb-btn-circle{
-  background: var(--mocha);
-  border: none;
-  transition: background 0.3s, color 0.3s;
-}
 
-.btn-container .bsb-btn-circle:hover{
-  background: var(--matcha);
-  color: var(--foam);
-}*/
 
 .cart-items-list .item:nth-child(even){
   background: var(--foam);
@@ -862,22 +767,6 @@ body {
   margin-right: 10px;
 }
 
-/*
-.card-form button {
-  margin-top: 20px;
-  width: 100%;
-  padding: 12px;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  border-radius: 6px;
-  font-size: 16px;
-  cursor: pointer;
-}
-
-.card-form button:hover {
-  background-color: #0056b3;
-}*/
 
 
 .checkout-page #card-details {
@@ -1130,10 +1019,6 @@ body {
 }
 
 
-
-/*the .checkout-page i add to to specify this designs for checkout page so that anyother page that has similar styles/names doesn't get affected*/
-
-/* End of checkout form design */
 
 
 
